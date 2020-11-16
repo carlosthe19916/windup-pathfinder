@@ -1,0 +1,214 @@
+-----------------------------------------------------------
+Rule execution timings:
+
+    0.497, RegisterApiPackagesInTypeInterestFactoryRuleProvider
+    2.114, CopyJavaConfigToGraphRuleProvider
+    0.070, LoadIssueCategoriesRuleProvider
+    0.010, IgnoredArchivesConfigLoadingRuleProvider
+    0.060, ArchiveIdentificationConfigLoadingRuleProvider
+    0.081, GatherIgnoredFileNamesRuleProvider
+    0.161, DiscoverFilesAndTypesRuleProvider
+    0.815, UnzipArchivesToOutputRuleProvider
+    0.156, DiscoverArchiveTypesRuleProvider
+    0.364, DiscoverArchiveManifestFilesRuleProvider
+    0.020, JavaFileMappingRuleProvider
+    0.079, DiscoverOrganizationByPackageStructureProvider
+    0.010, IndexJavaSourceFilesRuleProvider
+    0.082, DiscoverPropertiesFilesRuleProvider
+    0.256, DiscoverXmlFilesRuleProvider
+    0.027, MarkupFileMappingRuleProvider
+    0.039, JspFileMappingRuleProvider
+    1.404, DiscoverMavenProjectsRuleProvider
+    0.048, DiscoverNonMavenArchiveProjectsRuleProvider
+    0.094, DiscoverNonMavenSourceProjectsRuleProvider
+    0.033, DiscoverAdditionalProjectDetails
+    0.022, DiscoverMavenHierarchyRuleProvider
+    0.026, MavenizeRuleProvider
+    0.007, DiscoverDuplicateArchiveProjectsRuleProvider
+    0.008, BeforeDecompileClassesRuleProvider
+    0.063, DecompileClassesRuleProvider
+    0.055, embedded-framework-libraries
+    0.058, AnalyzeJavaFilesRuleProvider
+    0.043, DiscoverHibernateMappingRuleProvider
+    0.009, ResolveWebSphereWsExtensionXmlRuleProvider
+    0.010, DiscoverSpringConfigurationFilesRuleProvider
+    0.006, AnalyzeJSPFileRuleProvider
+    0.007, DiscoverJBossJbpmProcessFilesRuleProvider
+    0.009, DiscoverHibernateConfigurationRuleProvider
+    0.093, DiscoverJsfSourceFileRuleProvider
+    0.010, ResolveWebSphereWsBindingXmlRuleProvider
+    0.025, DiscoverJpaConfigurationXmlRuleProvider
+    0.008, DiscoverWebXmlRuleProvider
+    0.022, DiscoverEjbAnnotationsRuleProvider
+    0.009, DiscoverJaxRsAnnotationsRuleProvider
+    0.009, DiscoverDataSourceDsXmlRuleProvider
+    0.013, DiscoverJPAAnnotationsRuleProvider
+    0.010, DiscoverDataSourceAnnotationRuleProvider
+    0.072, DiscoverEjbConfigurationXmlRuleProvider
+    0.010, DiscoverJaxWSAnnotationsRuleProvider
+    0.008, ResolveSpringHibernateJPADataSourceRuleProvider
+    0.011, ResolveWebSphereWebXmlRuleProvider
+    0.009, ResolveJBossWebXmlRuleProvider
+    0.009, ResolveWebLogicWebXmlRuleProvider
+    0.008, ResolveOrionWebXmlRuleProvider
+    0.006, ResolveWebLogicEjbXmlRuleProvider
+    0.008, ResolveJBossEjbXmlRuleProvider
+    0.008, ResolveOrionEjbXmlRuleProvider
+    0.008, ResolveWebSphereEjbExtensionXmlRuleProvider
+    0.009, ResolveJBossLegacyEjbXmlRuleProvider
+    0.009, ResolveWebSphereEjbBindingXmlRuleProvider
+    0.010, java-glassfish-groovy
+    0.161, hibernate51-53-groovy
+    0.006, singleton-sessionbean-groovy
+    0.012, hsearch-groovy
+    0.194, connect
+    0.045, clustering
+    0.283, 3rd-party
+    0.190, integration
+    0.396, test-frameworks-usage
+    0.582, mvc
+    0.271, jta
+    0.248, security
+    0.425, logging-usage
+    0.222, database
+    0.539, embedded-framework
+    0.104, XmlFileMappings
+    0.526, DefaultPackageToVendorNames
+    0.044, weblogic-ejb
+    0.098, Log4jRules
+    0.009, jotm
+    0.112, eap4-eap6
+    0.009, xml-resin
+    0.070, environment-dependent-calls
+    0.011, xml-jonas
+    0.035, xml-orion
+    0.013, jrun-catchall
+    0.021, xml-jrun
+    0.051, commonj
+    0.028, xml-glassfish
+    0.008, eap6-jsp
+    0.201, seam-java
+    0.525, seam-ui-jsf
+    0.129, xml-webservices
+    0.008, java-ee-jaxrpc
+    0.274, weblogic-eap7-eap7
+    0.028, weblogic-services-eap7
+    0.219, weblogic-xml-descriptors-eap7
+    0.063, weblogic-webapp-eap7
+    0.056, weblogic-webservices-eap7
+    0.068, weblogic-jms-eap7
+    0.173, jboss-eap5and6to7-xml
+    0.007, resteasy-eap5and6to7
+    0.087, jboss-eap5and6to7-java
+    0.066, jboss-eap4and5to6and7-xml
+    0.029, jboss-eap4and5to6and7-java
+    0.011, resteasy30-36
+    0.014, picketlink25
+    0.534, hibernate51-53
+    0.008, move-to-microprofile-rest-client-1.3
+    0.010, maven-artemis-jms-client
+    0.008, maven-jboss-rmi-api_1.0_spec
+    0.007, singleton-sessionbean
+    0.144, maven-javax-to-jakarta
+    0.006, deprecated-singletonpolicy
+    0.018, hibernate50-51
+    0.065, eap7-websphere-xml
+    0.037, websphere-mqe-eap7
+    0.029, websphere-mq-eap7
+    0.057, websphere-jms-eap7
+    0.015, websphere-other-eap7
+    0.012, eap6-xml
+    0.024, ws-security
+    0.046, hibernate4-xml
+    0.406, resteasy-eap6
+    0.538, hsearch
+    0.008, jax-ws
+    0.047, eap6
+    0.488, hibernate4
+    0.117, jboss-eap5-7-java
+    0.007, base64
+    0.006, jaxrpc
+    0.047, jboss-eap5-7-xml
+    0.012, DiscoverHardcodedIPAddressRuleProvider
+    0.010, ValidateXmlFilesRuleProvider
+    1.951, TattletaleRuleProvider
+    0.007, Generate jboss-web.xml
+    0.009, DiscoverRmiRuleProvider
+    0.006, Generate jboss-ejb3.xml
+    0.163, technology-usage-security
+    0.439, technology-usage-embedded-framework
+    0.013, technology-usage-clustering
+    0.178, non-xml-technology-usage
+    0.161, technology-usage-connect
+    0.141, technology-usage-3rd-party
+    0.117, technology-usage-web
+    0.117, technology-usage-jta
+    0.235, technology-usage-javaee
+    0.237, technology-usage-test-frameworks
+    0.029, technology-usage-ejb
+    0.086, technology-usage-integration
+    0.015, technology-usage-markup
+    0.017, technology-usage-messaging
+    0.289, technology-usage-mvc
+    0.010, technology-usage-http
+    0.218, technology-usage-logging
+    0.129, technology-usage-database
+    0.080, weblogic-catchall
+    0.095, generic-catchall
+    0.020, websphere-catchall
+    0.006, FindUnboundJavaReferencesRuleProvider
+    0.006, DiscoverRemoteEjbRuleProvider
+    0.025, javaee-technology-tag
+    0.041, RenderTagsJavaScriptRuleProvider
+    0.024, CreateApplicationReportIndexRuleProvider
+    0.008, Resolve Links to Server Documentation
+    0.025, CreateUnparsableFilesReportRuleProvider
+    0.034, CreateAboutWindupReportRuleProvider
+    0.012, CreateDependencyGraphReportRuleProvider
+    0.080, Create Java Dependency Report
+    0.064, CreateJavaApplicationOverviewReportRuleProvider
+    0.008, CreateCompatibleFileReportRuleProvider
+    0.007, CreateHardcodedIPAddressReportRuleProvider
+    0.051, CreateJavaIgnoredFilesReportRuleProvider
+    0.013, CreateReportIndexRuleProvider
+    0.027, CreateFreeMarkerMethodReportRuleProvider
+    0.049, CreateMigrationIssuesReportRuleProvider
+    0.548, CreateTechReportRuleProvider
+    0.006, Create Spring Bean Report
+    0.009, Create JPA Report
+    0.007, Create JBPM Report
+    0.007, Create Remote Services Report
+    0.008, Create Server Resources Report
+    0.007, Create Hibernate Report
+    0.044, Create EJB Report
+    0.523, CreateApplicationListReportRuleProvider
+    0.008, ExportCSVFileRuleProvider
+    0.275, CreateSourceReportRuleProvider
+    0.080, AttachApplicationReportsToIndexRuleProvider
+    0.384, CreateIssueSummaryDataRuleProvider
+    0.062, CreateDependencyGraphDataRuleProvider
+    0.189, CssJsResourceRenderingRuleProvider
+    1.248, RenderReportRuleProvider
+    0.149, CacheFileModelPrettyPathRuleProvider
+    0.218, PersistCommonProjectTraversalsRuleProvider
+-----------------------------------------------------------
+
+Phase execution timings:
+
+     2.832, class org.jboss.windup.config.phase.InitializationPhase
+     0.161, class org.jboss.windup.config.phase.DiscoveryPhase
+     0.815, class org.jboss.windup.config.phase.ArchiveExtractionPhase
+     0.520, class org.jboss.windup.config.phase.ArchiveMetadataExtractionPhase
+     0.513, class org.jboss.windup.config.phase.ClassifyFileTypesPhase
+     1.608, class org.jboss.windup.config.phase.DiscoverProjectStructurePhase
+     0.032, class org.jboss.windup.config.phase.DependentPhase
+     0.071, class org.jboss.windup.config.phase.DecompilationPhase
+     0.571, class org.jboss.windup.config.phase.InitialAnalysisPhase
+    11.360, class org.jboss.windup.config.phase.MigrationRulesPhase
+     2.795, class org.jboss.windup.config.phase.PostMigrationRulesPhase
+     0.098, class org.jboss.windup.config.phase.PreReportGenerationPhase
+     1.006, class org.jboss.windup.config.phase.ReportGenerationPhase
+     0.886, class org.jboss.windup.config.phase.PostReportGenerationPhase
+     1.883, class org.jboss.windup.config.phase.ReportRenderingPhase
+     0.367, class org.jboss.windup.config.phase.FinalizePhase
+-----------------------------------------------------------
