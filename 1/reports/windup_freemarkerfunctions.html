@@ -55,14 +55,14 @@
                         <th>Implemented by</th>
                     </tr>
                         <tr>
-                            <td>getMigrationEffortPointsForFile</td>
-                            <td>Takes a FileModel as a parameter and returns an int containing the effort estimate for this file.</td>
-                            <td>org.jboss.windup.reporting.freemarker.GetEffortForFile</td>
-                        </tr>
-                        <tr>
                             <td>iterableToList</td>
                             <td>Turns the given Iterable into a List.</td>
                             <td>org.jboss.windup.reporting.freemarker.IterableToListMethod</td>
+                        </tr>
+                        <tr>
+                            <td>getMigrationEffortPointsForFile</td>
+                            <td>Takes a FileModel as a parameter and returns an int containing the effort estimate for this file.</td>
+                            <td>org.jboss.windup.reporting.freemarker.GetEffortForFile</td>
                         </tr>
                         <tr>
                             <td>isFileADirectory</td>
@@ -265,14 +265,14 @@
                             <td>org.jboss.windup.reporting.rules.generation.techreport.SortTechUsageStatsMethod</td>
                         </tr>
                         <tr>
-                            <td>getNumberOfLibraries</td>
-                            <td>Takes a ProjectModel as a parameter and returns a count of the number of libraries contained within</td>
-                            <td>org.jboss.windup.reporting.rules.generation.techreport.GetNumberOfLibrariesMethod</td>
-                        </tr>
-                        <tr>
                             <td>getTechnologyTagsForProjectTraversal</td>
                             <td>Takes a ProjectModel as a parameter and returns an Iterable<TechnologyTagModel> containing the technology tags for this project (and all subprojects).</td>
                             <td>org.jboss.windup.reporting.freemarker.GetTechnologyTagsForProject</td>
+                        </tr>
+                        <tr>
+                            <td>getNumberOfLibraries</td>
+                            <td>Takes a ProjectModel as a parameter and returns a count of the number of libraries contained within</td>
+                            <td>org.jboss.windup.reporting.rules.generation.techreport.GetNumberOfLibrariesMethod</td>
                         </tr>
                         <tr>
                             <td>projectModelToOrganizations</td>
@@ -285,14 +285,14 @@
                             <td>org.jboss.windup.reporting.freemarker.SortProjectsByPathMethod</td>
                         </tr>
                         <tr>
-                            <td>getTechnologyTagsForFile</td>
-                            <td>Takes a FileModel as a parameter and returns an Iterable<TechnologyTagModel> containing the technology tags for this file.</td>
-                            <td>org.jboss.windup.reporting.freemarker.GetTechnologyTagsForFile</td>
-                        </tr>
-                        <tr>
                             <td>getTechReportPunchCardStats</td>
                             <td>Takes a ProjectModel as a parameter and returns Map<Long, Integer> where the key is the effort level and the value is the number of incidents at that particular level of effort.</td>
                             <td>org.jboss.windup.reporting.rules.generation.techreport.GetTechReportPunchCardStatsMethod</td>
+                        </tr>
+                        <tr>
+                            <td>getTechnologyTagsForFile</td>
+                            <td>Takes a FileModel as a parameter and returns an Iterable<TechnologyTagModel> containing the technology tags for this file.</td>
+                            <td>org.jboss.windup.reporting.freemarker.GetTechnologyTagsForFile</td>
                         </tr>
                 </table>
             </div>

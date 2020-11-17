@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for Diferencia.java</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+    <link rel="shortcut icon" href="resources/img/mta-icon.png" type="image/x-icon"/>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+              <strong class="wu-navbar-header">Migration Toolkit for Applications</strong><img align="right" class="wu-navbar-header" src="resources/img/Logo-RedHat-A-Reverse-RGB.png" />
+            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="3838192">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ejbreport_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon ejb-nav-logo"></i>
+                      EJBs
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="server_resources_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon server-resource-nav-logo"></i>
+                      Server Resources
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="jpa_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon jpa-nav-logo"></i>
+                      JPA
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="tattletale_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon tattletale-nav-logo"></i>
+                      Tattletale
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="hardcoded_ipsAdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                      Hard-coded IP Addresses
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.jboss.org/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Migration Toolkit for Applications by Red Hat found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="3838192">
+                            AdministracionEfectivo.ear/AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar/mx/com/bcm/banamex/ae/persistencia/modelo/Diferencia.java
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Decompiled Java File</span>
+                                </div>
+
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+package mx.com.bcm.banamex.ae.persistencia.modelo;
+
+import java.io.Serializable;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+@Entity
+@Table(
+   name = &quot;DIFERENCIA&quot;
+)
+@NamedQueries({@NamedQuery(
+   name = &quot;Diferencia.findAll&quot;,
+   query = &quot;SELECT d FROM Diferencia d&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaIdn&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaIdn = :diferenciaIdn&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaMonto&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaMonto = :diferenciaMonto&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaTipo&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaTipo = :diferenciaTipo&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaAutorizoNoimina&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaAutorizoNoimina = :diferenciaAutorizoNoimina&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaSuc&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaSuc = :diferenciaSuc&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaCuenta&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaCuenta = :diferenciaCuenta&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaEstatus&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaEstatus = :diferenciaEstatus&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaNumAutorizacion&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaNumAutorizacion = :diferenciaNumAutorizacion&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaError&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaError = :diferenciaError&quot;
+), @NamedQuery(
+   name = &quot;Diferencia.findByDiferenciaErrorTxt&quot;,
+   query = &quot;SELECT d FROM Diferencia d WHERE d.diferenciaErrorTxt = :diferenciaErrorTxt&quot;
+)})
+public class Diferencia implements Serializable {
+   private static final long serialVersionUID = 1L;
+   @Id
+   @Basic(
+      optional = false
+   )
+   @Column(
+      name = &quot;DIFERENCIA_IDN&quot;
+   )
+   private Integer diferenciaIdn;
+   @Column(
+      name = &quot;DIFERENCIA_MONTO&quot;
+   )
+   private Double diferenciaMonto;
+   @Column(
+      name = &quot;DIFERENCIA_TIPO&quot;
+   )
+   private Short diferenciaTipo;
+   @Column(
+      name = &quot;DIFERENCIA_AUTORIZO_NOIMINA&quot;
+   )
+   private Integer diferenciaAutorizoNoimina;
+   @Column(
+      name = &quot;DIFERENCIA_SUC&quot;
+   )
+   private Short diferenciaSuc;
+   @Column(
+      name = &quot;DIFERENCIA_CUENTA&quot;
+   )
+   private Long diferenciaCuenta;
+   @Column(
+      name = &quot;DIFERENCIA_ESTATUS&quot;
+   )
+   private Short diferenciaEstatus;
+   @Column(
+      name = &quot;DIFERENCIA_NUM_AUTORIZACION&quot;
+   )
+   private Integer diferenciaNumAutorizacion;
+   @Column(
+      name = &quot;DIFERENCIA_ERROR&quot;
+   )
+   private Short diferenciaError;
+   @Column(
+      name = &quot;DIFERENCIA_ERROR_TXT&quot;
+   )
+   private String diferenciaErrorTxt;
+   @JoinColumns({@JoinColumn(
+   name = &quot;COMPBTE_ID&quot;,
+   referencedColumnName = &quot;COMPBTE_ID&quot;
+), @JoinColumn(
+   name = &quot;ETV_IDN&quot;,
+   referencedColumnName = &quot;ETV_IDN&quot;
+)})
+   @ManyToOne(
+      optional = false
+   )
+   private Comprobante comprobante;
+
+   public Diferencia() {
+   }
+
+   public Diferencia(Integer diferenciaIdn) {
+      this.diferenciaIdn = diferenciaIdn;
+   }
+
+   public Integer getDiferenciaIdn() {
+      return this.diferenciaIdn;
+   }
+
+   public void setDiferenciaIdn(Integer diferenciaIdn) {
+      this.diferenciaIdn = diferenciaIdn;
+   }
+
+   public Double getDiferenciaMonto() {
+      return this.diferenciaMonto;
+   }
+
+   public void setDiferenciaMonto(Double diferenciaMonto) {
+      this.diferenciaMonto = diferenciaMonto;
+   }
+
+   public Short getDiferenciaTipo() {
+      return this.diferenciaTipo;
+   }
+
+   public void setDiferenciaTipo(Short diferenciaTipo) {
+      this.diferenciaTipo = diferenciaTipo;
+   }
+
+   public Integer getDiferenciaAutorizoNoimina() {
+      return this.diferenciaAutorizoNoimina;
+   }
+
+   public void setDiferenciaAutorizoNoimina(Integer diferenciaAutorizoNoimina) {
+      this.diferenciaAutorizoNoimina = diferenciaAutorizoNoimina;
+   }
+
+   public Short getDiferenciaSuc() {
+      return this.diferenciaSuc;
+   }
+
+   public void setDiferenciaSuc(Short diferenciaSuc) {
+      this.diferenciaSuc = diferenciaSuc;
+   }
+
+   public Long getDiferenciaCuenta() {
+      return this.diferenciaCuenta;
+   }
+
+   public void setDiferenciaCuenta(Long diferenciaCuenta) {
+      this.diferenciaCuenta = diferenciaCuenta;
+   }
+
+   public Short getDiferenciaEstatus() {
+      return this.diferenciaEstatus;
+   }
+
+   public void setDiferenciaEstatus(Short diferenciaEstatus) {
+      this.diferenciaEstatus = diferenciaEstatus;
+   }
+
+   public Integer getDiferenciaNumAutorizacion() {
+      return this.diferenciaNumAutorizacion;
+   }
+
+   public void setDiferenciaNumAutorizacion(Integer diferenciaNumAutorizacion) {
+      this.diferenciaNumAutorizacion = diferenciaNumAutorizacion;
+   }
+
+   public Short getDiferenciaError() {
+      return this.diferenciaError;
+   }
+
+   public void setDiferenciaError(Short diferenciaError) {
+      this.diferenciaError = diferenciaError;
+   }
+
+   public String getDiferenciaErrorTxt() {
+      return this.diferenciaErrorTxt;
+   }
+
+   public void setDiferenciaErrorTxt(String diferenciaErrorTxt) {
+      this.diferenciaErrorTxt = diferenciaErrorTxt;
+   }
+
+   public Comprobante getComprobante() {
+      return this.comprobante;
+   }
+
+   public void setComprobante(Comprobante comprobante) {
+      this.comprobante = comprobante;
+   }
+
+   public int hashCode() {
+      int hash = 0;
+      int hash = hash + (this.diferenciaIdn != null ? this.diferenciaIdn.hashCode() : 0);
+      return hash;
+   }
+
+   public boolean equals(Object object) {
+      if (!(object instanceof Diferencia)) {
+         return false;
+      } else {
+         Diferencia other = (Diferencia)object;
+         return (this.diferenciaIdn != null || other.diferenciaIdn == null) &amp;&amp; (this.diferenciaIdn == null || this.diferenciaIdn.equals(other.diferenciaIdn));
+      }
+   }
+
+   public String toString() {
+      return &quot;mx.com.bcm.banamex.ae.persistencia.modelo.Diferencia[diferenciaIdn=&quot; + this.diferenciaIdn + &quot;]&quot;;
+   }
+}
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Nov 17, 2020 9:58:58 AM</div>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("java",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 3838192;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

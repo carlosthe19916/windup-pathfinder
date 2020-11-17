@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Source Report for MANIFEST.MF</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/snippet/jquery.snippet.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/windup-source.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/sausage/sausage.css" />
+    <link rel="shortcut icon" href="resources/img/mta-icon.png" type="image/x-icon"/>
+</head>
+<body role="document" class="source-report">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" style="display: none">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+              <strong class="wu-navbar-header">Migration Toolkit for Applications</strong><img align="right" class="wu-navbar-header" src="resources/img/Logo-RedHat-A-Reverse-RGB.png" />
+            </span>        </div>
+
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse project-specific" data-project-id="3838192">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ejbreport_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon ejb-nav-logo"></i>
+                      EJBs
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="server_resources_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon server-resource-nav-logo"></i>
+                      Server Resources
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="jpa_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon jpa-nav-logo"></i>
+                      JPA
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="tattletale_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon tattletale-nav-logo"></i>
+                      Tattletale
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="hardcoded_ipsAdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                      Hard-coded IP Addresses
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.jboss.org/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+                </div><!-- /.nav-collapse -->
+    </div>
+
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Source Report
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report displays what Migration Toolkit for Applications by Red Hat found in individual files. Each item is shown below the line it was found on, and next to it, you may find a link to the rule which it was found by."></i></div>
+
+                        <div class="path project-specific" data-project-id="3838192">
+                            AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/primefaces-3.5.jar/META-INF/MANIFEST.MF
+                        </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body" style="overflow: auto;">
+
+                        <!--<div style="height: 120pt; float:left;"></div> Keeps the minimal height. -->
+                        <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <div class="info" style="margin-left: 95pt;">
+
+
+                                <h4>Technologies</h4>
+                                <div class="technologies" style="overflow: auto"><!-- "auto" to contain all the tags. -->
+                                        <span class="label label-info" title="INFORMATIONAL">Manifest</span>
+                                </div>
+
+
+
+                            <div style="clear: both;"/><!-- Snaps under the height keeper. Yes, the same effect could be achieved by a table. -->
+                        </div><!-- .info -->
+                    </div>
+                </div>
+
+
+
+                <pre id="source">
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: jagatai
+Build-Jdk: 1.6.0_37
+Export-Package: org.primefaces.component.ring;uses:=&quot;javax.el,javax.fa
+ ces.component,javax.faces.application,javax.faces.context,org.primefa
+ ces.component.api,org.primefaces.util,org.primefaces.renderkit&quot;;versi
+ on=&quot;3.5&quot;,org.primefaces.component.scrollpanel;uses:=&quot;javax.el,javax.f
+ aces.component,javax.faces.application,javax.faces.context,org.primef
+ aces.component.api,org.primefaces.util,org.primefaces.renderkit&quot;;vers
+ ion=&quot;3.5&quot;,org.primefaces.component.password;uses:=&quot;javax.faces,javax.
+ el,javax.faces.component,org.primefaces.util,javax.faces.application,
+ javax.faces.context,javax.faces.component.html,org.primefaces.compone
+ nt.api,javax.faces.component.behavior,org.primefaces.renderkit&quot;;versi
+ on=&quot;3.5&quot;,org.primefaces.component.panelgrid;uses:=&quot;javax.el,javax.fac
+ es.component,javax.faces.application,javax.faces.context,org.primefac
+ es.component.row,org.primefaces.component.column,org.primefaces.rende
+ rkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.stack;uses:=&quot;javax.el,ja
+ vax.faces.component,javax.faces.application,javax.faces.context,org.p
+ rimefaces.component.api,org.primefaces.model,org.primefaces.component
+ .menu,javax.faces,org.primefaces.component.menuitem,org.primefaces.ut
+ il,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.r
+ esetinput;uses:=&quot;javax.faces,javax.el,javax.faces.component,javax.fac
+ es.context,javax.faces.component.visit,org.primefaces.visit,javax.fac
+ es.event,javax.faces.view.facelets&quot;;version=&quot;3.5&quot;,org.primefaces.comp
+ onent.idlemonitor;uses:=&quot;javax.el,javax.faces.component,javax.faces.a
+ pplication,javax.faces.context,org.primefaces.component.api,javax.fac
+ es.component.behavior,org.primefaces.util,org.primefaces.renderkit&quot;;v
+ ersion=&quot;3.5&quot;,org.primefaces.component.inputmask;uses:=&quot;javax.el,javax
+ .faces.component,javax.faces.application,javax.faces.context,javax.fa
+ ces.component.html,org.primefaces.component.api,org.primefaces.util,j
+ avax.faces.component.behavior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;
+ ,org.primefaces.component.tooltip;uses:=&quot;javax.el,javax.faces.compone
+ nt,javax.faces.application,javax.faces.context,org.primefaces.compone
+ nt.api,javax.faces,org.primefaces.util,org.primefaces.renderkit&quot;;vers
+ ion=&quot;3.5&quot;,org.primefaces.visit;uses:=&quot;javax.faces.component,javax.fac
+ es.component.visit&quot;;version=&quot;3.5&quot;,org.primefaces.event.data;uses:=&quot;ja
+ vax.faces.component,javax.faces.component.behavior,javax.faces.event,
+ org.primefaces.component.api,org.primefaces.model&quot;;version=&quot;3.5&quot;,org.
+ primefaces.component.effect;uses:=&quot;javax.el,javax.faces.component,jav
+ ax.faces.application,javax.faces.context,org.primefaces.component.api
+ ,org.primefaces.model,javax.faces,org.primefaces.util,org.primefaces.
+ renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.dock;uses:=&quot;javax.e
+ l,javax.faces.component,javax.faces.application,javax.faces.context,o
+ rg.primefaces.component.api,org.primefaces.model,org.primefaces.compo
+ nent.menu,javax.faces,org.primefaces.component.menuitem,org.primeface
+ s.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.compone
+ nt.orderlist;uses:=&quot;javax.el,javax.faces.component,javax.faces.applic
+ ation,javax.faces.context,org.primefaces.component.api,org.primefaces
+ .util,javax.faces.convert,org.primefaces.component.column,org.primefa
+ ces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.radiobutton;use
+ s:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.face
+ s.context,org.primefaces.component.api,javax.faces.model,javax.faces,
+ org.primefaces.component.selectoneradio,javax.faces.convert,org.prime
+ faces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.selectmanymen
+ u;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax
+ .faces.context,javax.faces.component.html,org.primefaces.component.ap
+ i,javax.faces.render,javax.faces.model,org.primefaces.component.colum
+ n,org.primefaces.util,javax.faces.convert,javax.faces.component.behav
+ ior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.applicatio
+ n;uses:=&quot;javax.el,javax.faces.application,javax.faces.context,org.pri
+ mefaces.model&quot;;version=&quot;3.5&quot;,org.primefaces.component.picklist;uses:=
+ &quot;javax.el,javax.faces.context,javax.faces.event,javax.faces.component
+ ,javax.faces.application,org.primefaces.util,org.primefaces.event,org
+ .primefaces.component.api,javax.faces.convert,javax.faces.component.b
+ ehavior,org.primefaces.model,org.primefaces.component.column,org.prim
+ efaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.keyboard;use
+ s:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.face
+ s.context,javax.faces.component.html,org.primefaces.component.api,org
+ .primefaces.util,javax.faces.component.behavior,org.primefaces.render
+ kit&quot;;version=&quot;3.5&quot;,org.primefaces.model;uses:=&quot;javax.el,javax.faces.c
+ ontext,org.primefaces.component.menuitem,javax.faces.component,org.pr
+ imefaces.component.submenu,org.primefaces.component.separator,org.apa
+ che.commons.fileupload,org.primefaces.component.api,javax.faces.model
+ &quot;;version=&quot;3.5&quot;,org.primefaces.component.selectonebutton;uses:=&quot;javax
+ .el,javax.faces.component,javax.faces.application,javax.faces.context
+ ,org.primefaces.component.api,javax.faces.component.behavior,javax.fa
+ ces.render,org.primefaces.util,javax.faces.model,javax.faces.convert,
+ org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.grap
+ hicimage;uses:=&quot;javax.el,javax.faces.component,javax.faces.applicatio
+ n,javax.faces.context,javax.faces.component.html,org.primefaces.util,
+ org.primefaces.model,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.prim
+ efaces.component.layout;uses:=&quot;javax.el,javax.faces.context,javax.fac
+ es.event,javax.faces.component,javax.faces.application,org.primefaces
+ .event,org.primefaces.component.api,javax.faces.component.behavior,or
+ g.primefaces.model,org.primefaces.util,org.primefaces.renderkit&quot;;vers
+ ion=&quot;3.5&quot;,org.primefaces.component.media.player;version=&quot;3.5&quot;,org.pri
+ mefaces.component.rowtoggler;uses:=&quot;javax.el,javax.faces.component,ja
+ vax.faces.application,javax.faces.context,org.primefaces.renderkit&quot;;v
+ ersion=&quot;3.5&quot;,org.primefaces.component.toolbar;uses:=&quot;javax.el,javax.f
+ aces.component,javax.faces.application,javax.faces.context,org.primef
+ aces.renderkit,org.primefaces.component.separator&quot;;version=&quot;3.5&quot;,org.
+ primefaces.model.mindmap;version=&quot;3.5&quot;,org.primefaces.component.media
+ ;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.
+ faces.context,org.primefaces.component.media.player,org.primefaces.ut
+ il,org.primefaces.model,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.p
+ rimefaces.component.gmap;uses:=&quot;org.primefaces.event.map,javax.el,jav
+ ax.faces.context,org.primefaces.model.map,javax.faces.event,org.prime
+ faces.context,javax.faces.component,javax.faces.application,org.prime
+ faces.component.api,javax.faces.component.behavior,org.primefaces.com
+ ponent.behavior.ajax,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.prim
+ efaces.component.blockui;uses:=&quot;javax.el,javax.faces.component,javax.
+ faces.application,javax.faces.context,org.primefaces.component.api,ja
+ vax.faces,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;
+ ,org.primefaces.component.behavior.printer;uses:=&quot;javax.faces,javax.f
+ aces.component,javax.faces.application,javax.faces.context,javax.face
+ s.component.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.component.feedread
+ er;uses:=&quot;com.sun.syndication.feed.synd,com.sun.syndication.io,javax.
+ el,javax.faces.component,javax.faces.application,javax.faces.context,
+ org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.tabm
+ enu;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,jav
+ ax.faces.context,org.primefaces.component.api,org.primefaces.model,or
+ g.primefaces.component.menu,org.primefaces.component.menuitem,org.pri
+ mefaces.util&quot;;version=&quot;3.5&quot;,org.primefaces.model.filter;version=&quot;3.5&quot;
+ ,org.primefaces.component.selectmanybutton;uses:=&quot;javax.el,javax.face
+ s.component,javax.faces.application,javax.faces.context,org.primeface
+ s.component.api,javax.faces.component.behavior,javax.faces.render,org
+ .primefaces.util,javax.faces.model,javax.faces.convert,org.primefaces
+ .renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.fileupload;uses:=&quot;
+ javax.el,javax.faces.component,javax.faces.application,javax.faces.co
+ ntext,org.primefaces.event,org.primefaces.component.api,javax.faces.e
+ vent,org.primefaces.facelets,javax.faces.view.facelets,org.apache.com
+ mons.fileupload,javax.servlet,org.primefaces.util,org.primefaces.weba
+ pp,javax.faces.convert,org.primefaces.renderkit,org.primefaces.model&quot;
+ ;version=&quot;3.5&quot;,org.primefaces.component.selectoneradio;uses:=&quot;javax.e
+ l,javax.faces.component,javax.faces.application,javax.faces.context,j
+ avax.faces.model,javax.faces.component.html,org.primefaces.component.
+ api,javax.faces.render,org.primefaces.util,org.primefaces.component.r
+ adiobutton,javax.faces.convert,javax.faces.component.behavior,org.pri
+ mefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.lifecycle;uses:=&quot;org.
+ primefaces.context,javax.faces.context,javax.faces.event&quot;;version=&quot;3.
+ 5&quot;,org.primefaces.component.selectonelistbox;uses:=&quot;javax.el,javax.fa
+ ces.component,javax.faces.application,javax.faces.context,javax.faces
+ .component.html,org.primefaces.component.api,javax.faces.render,javax
+ .faces.model,org.primefaces.component.column,org.primefaces.util,java
+ x.faces.convert,javax.faces.component.behavior,org.primefaces.renderk
+ it&quot;;version=&quot;3.5&quot;,org.primefaces.component.clock;uses:=&quot;javax.el,java
+ x.faces.component,javax.faces.application,javax.faces.context,org.pri
+ mefaces.component.api,org.primefaces.context,org.primefaces.util,org.
+ primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.datalist
+ ;uses:=&quot;javax.el,javax.faces.context,javax.faces.model,javax.faces.ev
+ ent,javax.faces,org.primefaces.context,javax.faces.component,javax.fa
+ ces.application,org.primefaces.component.api,javax.faces.component.be
+ havior,org.primefaces.model,org.primefaces.util,org.primefaces.render
+ kit&quot;;version=&quot;3.5&quot;,org.primefaces.component.imagecropper;uses:=&quot;javax
+ .el,javax.faces.component,javax.faces.application,javax.faces.context
+ ,org.primefaces.component.api,javax.imageio,javax.servlet,org.primefa
+ ces.util,javax.faces.convert,org.primefaces.renderkit,org.primefaces.
+ model&quot;;version=&quot;3.5&quot;,org.primefaces.component.contextmenu;uses:=&quot;java
+ x.el,javax.faces.component,javax.faces.application,javax.faces.contex
+ t,org.primefaces.component.api,org.primefaces.model,org.primefaces.co
+ mponent.menu,javax.faces,org.primefaces.component.tieredmenu,org.prim
+ efaces.util&quot;;version=&quot;3.5&quot;,org.primefaces.component.slider;uses:=&quot;jav
+ ax.el,javax.faces.component,javax.faces.application,javax.faces.conte
+ xt,org.primefaces.event,org.primefaces.component.api,javax.faces.comp
+ onent.behavior,javax.faces.event,org.primefaces.facelets,javax.faces.
+ view.facelets,javax.faces,org.primefaces.util,org.primefaces.renderki
+ t&quot;;version=&quot;3.5&quot;,org.primefaces.component.photocam;uses:=&quot;javax.el,ja
+ vax.faces.component,javax.faces.application,javax.faces.context,org.p
+ rimefaces.event,org.primefaces.component.api,javax.faces.event,org.pr
+ imefaces.facelets,javax.faces.view.facelets,org.primefaces.util,org.p
+ rimefaces.renderkit,javax.xml.bind&quot;;version=&quot;3.5&quot;,org.primefaces.comp
+ onent.calendar;uses:=&quot;javax.el,javax.faces.context,javax.faces.event,
+ javax.faces.component,javax.faces.application,org.primefaces.util,org
+ .primefaces.event,javax.faces.component.html,org.primefaces.component
+ .api,javax.faces.component.behavior,javax.faces.convert,org.primeface
+ s.renderkit,javax.faces&quot;;version=&quot;3.5&quot;,org.primefaces.component.growl
+ ;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.
+ faces.context,org.primefaces.component.api,org.primefaces.renderkit&quot;;
+ version=&quot;3.5&quot;,org.primefaces.component.celleditor;uses:=&quot;javax.el,jav
+ ax.faces.component,javax.faces.application,javax.faces.context,org.pr
+ imefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.treetable;
+ uses:=&quot;javax.el,javax.faces.context,org.primefaces.component.column,j
+ avax.faces.event,javax.faces.component,javax.faces.application,org.pr
+ imefaces.event,org.primefaces.component.api,javax.faces.component.beh
+ avior,org.primefaces.model,org.primefaces.util,org.primefaces.renderk
+ it&quot;;version=&quot;3.5&quot;,org.primefaces.component.colorpicker;uses:=&quot;javax.e
+ l,javax.faces.component,javax.faces.application,javax.faces.context,o
+ rg.primefaces.component.api,org.primefaces.util,org.primefaces.render
+ kit&quot;;version=&quot;3.5&quot;,org.primefaces.component.tagcloud;uses:=&quot;javax.el,
+ javax.faces.context,javax.faces.event,javax.faces.component,javax.fac
+ es.application,org.primefaces.model.tagcloud,org.primefaces.event,org
+ .primefaces.component.api,javax.faces.component.behavior,org.primefac
+ es.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.compon
+ ent.log;uses:=&quot;javax.el,javax.faces.component,javax.faces.application
+ ,javax.faces.context,org.primefaces.component.api,org.primefaces.util
+ ,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.fil
+ edownload;uses:=&quot;javax.faces,javax.el,javax.faces.component,javax.fac
+ es.context,org.primefaces.model,javax.faces.event,javax.faces.view.fa
+ celets&quot;;version=&quot;3.5&quot;,org.primefaces.component.message;uses:=&quot;javax.e
+ l,javax.faces.component,javax.faces.application,javax.faces.context,o
+ rg.primefaces.component.api,javax.faces,org.primefaces.renderkit&quot;;ver
+ sion=&quot;3.5&quot;,org.primefaces.component.hotkey;uses:=&quot;javax.el,javax.face
+ s.component,javax.faces.application,javax.faces.context,org.primeface
+ s.component.api,javax.faces,org.primefaces.util,org.primefaces.render
+ kit,javax.faces.event&quot;;version=&quot;3.5&quot;,org.primefaces.component.accordi
+ onpanel;uses:=&quot;javax.el,org.primefaces.component.tabview,javax.faces.
+ context,javax.faces.event,javax.faces.component,javax.faces.applicati
+ on,org.primefaces.event,javax.faces.component.visit,org.primefaces.co
+ mponent.api,javax.faces.component.behavior,org.primefaces.facelets,ja
+ vax.faces.view.facelets,org.primefaces.util,org.primefaces.renderkit&quot;
+ ;version=&quot;3.5&quot;,org.primefaces.component.spacer;uses:=&quot;javax.el,javax.
+ faces.component,javax.faces.application,javax.faces.context,org.prime
+ faces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.rating;uses:=
+ &quot;javax.el,javax.faces.component,javax.faces.application,javax.faces.c
+ ontext,org.primefaces.event,org.primefaces.component.api,javax.faces.
+ component.behavior,javax.faces.event,org.primefaces.util,org.primefac
+ es.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.collector;uses:=
+ &quot;javax.el,javax.faces.component,javax.faces.context,javax.faces.event
+ ,javax.faces,javax.faces.view.facelets&quot;;version=&quot;3.5&quot;,org.primefaces.
+ component.lightbox;uses:=&quot;javax.el,javax.faces.component,javax.faces.
+ application,javax.faces.context,org.primefaces.component.api,org.prim
+ efaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.co
+ mponent.behavior.ajax;uses:=&quot;javax.faces,javax.el,javax.faces.compone
+ nt,javax.faces.application,javax.faces.context,org.primefaces.compone
+ nt.api,javax.faces.component.behavior,javax.faces.event,javax.faces.v
+ iew.facelets,javax.faces.view,javax.faces.render,org.primefaces.util&quot;
+ ;version=&quot;3.5&quot;,org.primefaces.model.tagcloud;version=&quot;3.5&quot;,org.primef
+ aces.component.overlaypanel;uses:=&quot;javax.el,javax.faces.component,jav
+ ax.faces.application,javax.faces.context,org.primefaces.component.api
+ ,javax.faces,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3
+ .5&quot;,org.primefaces.event.map;uses:=&quot;javax.faces.component,org.primefa
+ ces.model.map,javax.faces.component.behavior,javax.faces.event&quot;;versi
+ on=&quot;3.5&quot;,org.primefaces.component.imageswitch;uses:=&quot;javax.el,javax.f
+ aces.component,javax.faces.application,javax.faces.context,org.primef
+ aces.component.api,org.primefaces.util,org.primefaces.renderkit&quot;;vers
+ ion=&quot;3.5&quot;,org.primefaces.component.chart.pie;uses:=&quot;javax.el,javax.fa
+ ces.component,org.primefaces.component.chart,javax.faces.application,
+ javax.faces.context,org.primefaces.component.api,org.primefaces.model
+ .chart,javax.faces.component.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.c
+ omponent.inputtext;uses:=&quot;javax.el,javax.faces.component,javax.faces.
+ application,javax.faces.context,javax.faces.component.html,org.primef
+ aces.component.api,org.primefaces.util,javax.faces.component.behavior
+ ,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.dat
+ agrid;uses:=&quot;javax.el,org.primefaces.context,javax.faces.component,ja
+ vax.faces.application,javax.faces.context,javax.faces.model,org.prime
+ faces.component.api,org.primefaces.model,org.primefaces.util,org.prim
+ efaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.summaryrow;u
+ ses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.fa
+ ces.context,org.primefaces.facelets,javax.faces.view.facelets,org.pri
+ mefaces.component.column,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.
+ primefaces.component.captcha;uses:=&quot;javax.el,javax.faces.context,java
+ x.faces,javax.faces.component,javax.faces.application,org.primefaces.
+ util,javax.servlet.http,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.p
+ rimefaces.component.chart.metergauge;uses:=&quot;javax.el,javax.faces.comp
+ onent,org.primefaces.component.chart,javax.faces.application,javax.fa
+ ces.context,org.primefaces.model.chart,org.primefaces.component.api,j
+ avax.faces.component.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.component
+ .roweditor;uses:=&quot;javax.el,javax.faces.component,javax.faces.applicat
+ ion,javax.faces.context,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.p
+ rimefaces.component.selectmanycheckbox;uses:=&quot;javax.el,javax.faces.co
+ mponent,javax.faces.application,javax.faces.context,javax.faces.compo
+ nent.html,org.primefaces.component.api,javax.faces.render,org.primefa
+ ces.util,javax.faces.model,javax.faces.convert,javax.faces.component.
+ behavior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.compo
+ nent.schedule;uses:=&quot;javax.el,javax.faces.context,javax.faces.event,j
+ avax.faces.component,javax.faces.application,org.primefaces.event,org
+ .primefaces.component.api,javax.faces.component.behavior,org.primefac
+ es.model,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,
+ org.primefaces.component.imagecompare;uses:=&quot;javax.el,javax.faces.com
+ ponent,javax.faces.application,javax.faces.context,org.primefaces.com
+ ponent.api,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5
+ &quot;,org.primefaces.component.selectonemenu;uses:=&quot;javax.el,javax.faces.
+ context,org.primefaces.component.column,javax.faces.validator,javax.f
+ aces.component,org.primefaces.util,javax.faces.application,javax.face
+ s.component.html,org.primefaces.component.api,javax.faces.render,java
+ x.faces.model,javax.faces.convert,javax.faces.component.behavior,org.
+ primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.api;uses
+ :=&quot;javax.faces.context,javax.el,javax.faces.component,org.primefaces.
+ component.celleditor,org.primefaces.component.columns,javax.faces.ren
+ der,javax.faces.model,javax.faces.event,javax.faces,javax.faces.appli
+ cation,org.primefaces.util,javax.faces.component.visit,org.primefaces
+ .model&quot;;version=&quot;3.5&quot;,org.primefaces;version=&quot;3.5&quot;,org.primefaces.com
+ ponent.menu;uses:=&quot;javax.el,javax.faces.component,org.primefaces.mode
+ l,javax.faces,org.primefaces.component.menuitem,org.primefaces.util,j
+ avax.faces.context,org.primefaces.component.api,org.primefaces.render
+ kit,org.primefaces.component.separator,javax.faces.application,org.pr
+ imefaces.component.submenu&quot;;version=&quot;3.5&quot;,org.primefaces.component.th
+ emeswitcher;uses:=&quot;javax.el,javax.faces.component,javax.faces.applica
+ tion,org.primefaces.component.selectonemenu,javax.faces.context,org.p
+ rimefaces.component.api,org.primefaces.util,javax.faces.component.beh
+ avior&quot;;version=&quot;3.5&quot;,org.primefaces.component.tabview;uses:=&quot;javax.el
+ ,javax.faces.component,javax.faces.application,javax.faces.context,ja
+ vax.faces.event,org.primefaces.event,javax.faces.component.visit,org.
+ primefaces.component.api,javax.faces.component.behavior,org.primeface
+ s.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.compone
+ nt.commandbutton;uses:=&quot;javax.el,javax.faces.component,javax.faces.ap
+ plication,javax.faces.context,javax.faces.component.html,org.primefac
+ es.component.api,javax.faces,org.primefaces.util,javax.faces.componen
+ t.behavior,org.primefaces.renderkit,javax.faces.event&quot;;version=&quot;3.5&quot;,
+ org.primefaces.component.chart.line;uses:=&quot;javax.el,javax.faces.compo
+ nent,org.primefaces.component.chart,javax.faces.application,javax.fac
+ es.context,org.primefaces.component.api,org.primefaces.model.chart,ja
+ vax.faces.component.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.component.
+ breadcrumb;uses:=&quot;javax.el,javax.faces.component,javax.faces.applicat
+ ion,javax.faces.context,org.primefaces.component.api,org.primefaces.m
+ odel,org.primefaces.component.menu,org.primefaces.component.menuitem&quot;
+ ;version=&quot;3.5&quot;,org.primefaces.component.carousel;uses:=&quot;javax.el,java
+ x.faces.component,javax.faces.application,javax.faces.context,org.pri
+ mefaces.component.api,org.primefaces.util,org.primefaces.renderkit&quot;;v
+ ersion=&quot;3.5&quot;,org.primefaces.component.outputpanel;uses:=&quot;javax.el,jav
+ ax.faces.component,javax.faces.application,javax.faces.context,org.pr
+ imefaces.component.api,javax.faces,org.primefaces.renderkit&quot;;version=
+ &quot;3.5&quot;,org.primefaces.component.outputlabel;uses:=&quot;javax.el,javax.face
+ s.application,javax.faces.context,javax.faces.component.html,javax.fa
+ ces,javax.faces.component,org.primefaces.util,org.primefaces.componen
+ t.api,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.componen
+ t.panelmenu;uses:=&quot;javax.el,javax.faces.component,javax.faces.applica
+ tion,javax.faces.context,org.primefaces.component.api,org.primefaces.
+ model,org.primefaces.component.menu,org.primefaces.component.menuitem
+ ,org.primefaces.util,org.primefaces.component.submenu&quot;;version=&quot;3.5&quot;,
+ org.primefaces.component.column;uses:=&quot;javax.el,javax.faces.component
+ ,javax.faces.application,javax.faces.context,org.primefaces.component
+ .celleditor,org.primefaces.component.api,org.primefaces.facelets,java
+ x.faces.view.facelets&quot;;version=&quot;3.5&quot;,org.primefaces.component.slideme
+ nu;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,java
+ x.faces.context,org.primefaces.component.api,org.primefaces.model,org
+ .primefaces.component.menu,org.primefaces.component.tieredmenu,org.pr
+ imefaces.util&quot;;version=&quot;3.5&quot;,org.primefaces.component.datatable.featu
+ re;uses:=&quot;javax.faces.context,org.primefaces.component.datatable,java
+ x.faces.component,org.primefaces.component.api,org.primefaces.compone
+ nt.column,org.primefaces.component.columns,javax.el,javax.faces,org.p
+ rimefaces.model.filter,org.primefaces.context,org.primefaces.util,org
+ .primefaces.component.row,org.primefaces.component.columngroup,org.pr
+ imefaces.model,org.primefaces.component.celleditor,org.primefaces.com
+ ponent.rowexpansion,javax.faces.model&quot;;version=&quot;3.5&quot;,org.primefaces.c
+ omponent.terminal;uses:=&quot;javax.el,javax.faces.component,javax.faces.a
+ pplication,javax.faces.context,org.primefaces.component.api,org.prime
+ faces.facelets,javax.faces.view.facelets,org.primefaces.util,org.prim
+ efaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.autocomplete
+ ;uses:=&quot;javax.el,javax.faces.context,org.primefaces.component.column,
+ javax.faces.event,javax.faces.component,javax.faces.application,org.p
+ rimefaces.event,javax.faces.component.html,org.primefaces.component.a
+ pi,javax.faces.convert,javax.faces.component.behavior,org.primefaces.
+ facelets,javax.faces.view.facelets,org.primefaces.util,org.primefaces
+ .renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.megamenu;uses:=&quot;ja
+ vax.el,javax.faces.component,javax.faces.application,javax.faces.cont
+ ext,org.primefaces.component.api,org.primefaces.model,org.primefaces.
+ component.menu,org.primefaces.component.menuitem,org.primefaces.util,
+ org.primefaces.component.submenu,org.primefaces.component.column,org.
+ primefaces.component.separator&quot;;version=&quot;3.5&quot;,org.primefaces.event;us
+ es:=&quot;javax.faces.component,javax.faces.event,javax.faces.render,javax
+ .faces.context,org.primefaces.component.api,org.primefaces.component.
+ celleditor,javax.faces.component.behavior,org.primefaces.component.da
+ tatable,org.primefaces.model,org.primefaces.component.tabview&quot;;versio
+ n=&quot;3.5&quot;,org.primefaces.model.chart;version=&quot;3.5&quot;,org.primefaces.compo
+ nent.columngroup;uses:=&quot;javax.el,javax.faces.component,javax.faces.ap
+ plication,javax.faces.context&quot;;version=&quot;3.5&quot;,org.primefaces.component
+ .wizard;uses:=&quot;javax.el,org.primefaces.component.tabview,javax.faces.
+ component,javax.faces.application,javax.faces.context,org.primefaces.
+ event,org.primefaces.component.api,javax.faces.event,org.primefaces.f
+ acelets,javax.faces.view.facelets,javax.faces,org.primefaces.context,
+ org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.prime
+ faces.webapp.filter;uses:=&quot;javax.servlet,org.apache.commons.fileuploa
+ d.disk,org.apache.commons.fileupload,org.primefaces.webapp,org.apache
+ .commons.fileupload.servlet,javax.servlet.http&quot;;version=&quot;3.5&quot;,org.pri
+ mefaces.renderkit;uses:=&quot;org.primefaces.context,javax.faces.render,ja
+ vax.faces.component,javax.faces.application,org.primefaces.util,javax
+ .faces.context,org.primefaces.component.api,javax.faces.component.beh
+ avior,org.primefaces.component.paginator,javax.faces,javax.el,javax.f
+ aces.model,javax.faces.convert&quot;;version=&quot;3.5&quot;,org.primefaces.componen
+ t.poll;uses:=&quot;javax.el,org.primefaces.context,javax.faces.component,j
+ avax.faces.application,javax.faces.context,org.primefaces.component.a
+ pi,javax.faces.event,org.primefaces.facelets,javax.faces.view.facelet
+ s,javax.faces,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;
+ 3.5&quot;,org.primefaces.component.selectcheckboxmenu;uses:=&quot;javax.el,java
+ x.faces.context,javax.faces.event,javax.faces.component,javax.faces.a
+ pplication,org.primefaces.event,javax.faces.component.html,org.primef
+ aces.component.api,javax.faces.component.behavior,javax.faces.render,
+ org.primefaces.util,javax.faces.model,javax.faces.convert,org.primefa
+ ces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.subtable;uses:=
+ &quot;javax.el,javax.faces.component,javax.faces.application,javax.faces.c
+ ontext,org.primefaces.component.columngroup,org.primefaces.component.
+ column,org.primefaces.component.row,org.primefaces.renderkit&quot;;version
+ =&quot;3.5&quot;,org.primefaces.component.fieldset;uses:=&quot;javax.el,javax.faces.
+ context,javax.faces.event,javax.faces.component,javax.faces.applicati
+ on,org.primefaces.event,org.primefaces.component.api,javax.faces.comp
+ onent.behavior,org.primefaces.model,org.primefaces.util,org.primeface
+ s.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.inplace;uses:=&quot;ja
+ vax.el,javax.faces.component,javax.faces.application,javax.faces.cont
+ ext,org.primefaces.component.api,javax.faces.component.behavior,org.p
+ rimefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces
+ .component.resizable;uses:=&quot;javax.el,javax.faces.component,javax.face
+ s.application,javax.faces.context,org.primefaces.event,org.primefaces
+ .component.api,javax.faces.component.behavior,javax.faces.event,javax
+ .faces,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,or
+ g.primefaces.context;uses:=&quot;javax.faces,javax.faces.component,org.pri
+ mefaces.util,javax.faces.context,javax.faces.component.visit,org.prim
+ efaces.visit,org.primefaces.json,javax.faces.event&quot;;version=&quot;3.5&quot;,org
+ .primefaces.push;uses:=&quot;org.atmosphere.cpr,org.slf4j,javax.servlet,or
+ g.atmosphere.handler,org.primefaces.json,org.atmosphere.interceptor&quot;;
+ version=&quot;3.5&quot;,org.primefaces.component.dnd;uses:=&quot;javax.el,javax.face
+ s.component,javax.faces.application,javax.faces.context,org.primeface
+ s.component.api,javax.faces,org.primefaces.component.dashboard,org.pr
+ imefaces.util,org.primefaces.renderkit,javax.faces.event,org.primefac
+ es.event,javax.faces.component.behavior,org.primefaces.facelets,javax
+ .faces.view.facelets&quot;;version=&quot;3.5&quot;,org.primefaces.component.editor;u
+ ses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.fa
+ ces.context,org.primefaces.component.api,org.primefaces.util,javax.fa
+ ces.convert,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.co
+ mponent.spinner;uses:=&quot;javax.el,javax.faces.component,javax.faces.app
+ lication,javax.faces.context,javax.faces.component.html,org.primeface
+ s.component.api,org.primefaces.util,javax.faces.component.behavior,or
+ g.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.webapp;uses:=&quot;ja
+ vax.servlet,org.apache.commons.fileupload,org.apache.commons.fileuplo
+ ad.servlet,javax.servlet.http,javax.faces.event&quot;;version=&quot;3.5&quot;,org.pr
+ imefaces.component.confirmdialog;uses:=&quot;javax.el,javax.faces.componen
+ t,javax.faces.application,javax.faces.context,org.primefaces.componen
+ t.api,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org
+ .primefaces.component.chart.bubble;uses:=&quot;javax.el,javax.faces.compon
+ ent,org.primefaces.component.chart,javax.faces.application,javax.face
+ s.context,org.primefaces.model.chart,org.primefaces.component.api,jav
+ ax.faces.component.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.component.r
+ ow;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,java
+ x.faces.context&quot;;version=&quot;3.5&quot;,org.primefaces.component.galleria;uses
+ :=&quot;javax.el,javax.faces.component,javax.faces.application,javax.faces
+ .context,org.primefaces.component.api,org.primefaces.util,org.primefa
+ ces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.columns;uses:=&quot;
+ javax.el,javax.faces.component,javax.faces.application,javax.faces.co
+ ntext,org.primefaces.component.celleditor,org.primefaces.component.ap
+ i&quot;;version=&quot;3.5&quot;,org.primefaces.component.tree;uses:=&quot;javax.el,javax.
+ faces.context,javax.faces.event,javax.faces,javax.faces.component,jav
+ ax.faces.application,org.primefaces.event,org.primefaces.component.ap
+ i,javax.faces.component.behavior,org.primefaces.model,org.primefaces.
+ facelets,javax.faces.view.facelets,org.primefaces.util,org.primefaces
+ .renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.chart.ohlc;uses:=&quot;
+ javax.el,javax.faces.component,org.primefaces.component.chart,javax.f
+ aces.application,javax.faces.context,org.primefaces.model.chart,org.p
+ rimefaces.component.api,javax.faces.component.behavior&quot;;version=&quot;3.5&quot;
+ ,org.primefaces.component.selectbooleanbutton;uses:=&quot;javax.el,javax.f
+ aces.component,javax.faces.application,javax.faces.context,javax.face
+ s.component.html,org.primefaces.component.api,org.primefaces.util,jav
+ ax.faces.component.behavior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,o
+ rg.primefaces.component.socket;uses:=&quot;javax.el,javax.faces.component,
+ javax.faces.application,javax.faces.context,org.primefaces.component.
+ api,javax.faces.component.behavior,javax.faces.event,org.primefaces.r
+ enderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.mindmap;uses:=&quot;javax
+ .el,org.primefaces.model.mindmap,javax.faces.context,javax.faces.even
+ t,javax.faces.component,javax.faces.application,org.primefaces.event,
+ org.primefaces.component.api,javax.faces.component.behavior,org.prime
+ faces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.paginator;use
+ s:=&quot;javax.faces.component,javax.faces.context,org.primefaces.componen
+ t.api&quot;;version=&quot;3.5&quot;,org.primefaces.component.dialog;uses:=&quot;javax.el,
+ javax.faces.component,javax.faces.application,javax.faces.context,org
+ .primefaces.event,org.primefaces.component.api,javax.faces.component.
+ behavior,javax.faces.event,org.primefaces.util,org.primefaces.renderk
+ it&quot;;version=&quot;3.5&quot;,org.primefaces.component.menubar;uses:=&quot;javax.el,ja
+ vax.faces.component,javax.faces.application,javax.faces.context,org.p
+ rimefaces.component.api,org.primefaces.model,org.primefaces.component
+ .menu,org.primefaces.component.tieredmenu,org.primefaces.util,org.pri
+ mefaces.component.submenu&quot;;version=&quot;3.5&quot;,org.primefaces.component.row
+ expansion;uses:=&quot;javax.el,javax.faces.component,javax.faces.applicati
+ on,javax.faces.context&quot;;version=&quot;3.5&quot;,org.primefaces.component.ajaxst
+ atus;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,ja
+ vax.faces.context,org.primefaces.component.api,org.primefaces.util,or
+ g.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.select
+ booleancheckbox;uses:=&quot;javax.el,javax.faces.component,javax.faces.app
+ lication,javax.faces.context,javax.faces.component.html,org.primeface
+ s.component.api,org.primefaces.util,javax.faces.convert,javax.faces.c
+ omponent.behavior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefa
+ ces.component.separator;uses:=&quot;javax.el,javax.faces.component,javax.f
+ aces.application,javax.faces.context,org.primefaces.renderkit&quot;;versio
+ n=&quot;3.5&quot;,org.primefaces.component.resources;uses:=&quot;javax.faces.compone
+ nt,javax.faces.context,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.pr
+ imefaces.component.menuitem;uses:=&quot;javax.el,javax.faces.component,jav
+ ax.faces.application,javax.faces.context,org.primefaces.component.api
+ ,javax.faces.event&quot;;version=&quot;3.5&quot;,org.primefaces.component.defaultcom
+ mand;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,ja
+ vax.faces.context,org.primefaces.component.api,javax.faces,org.primef
+ aces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.comp
+ onent.chart.donut;uses:=&quot;javax.el,javax.faces.component,org.primeface
+ s.component.chart,javax.faces.application,javax.faces.context,org.pri
+ mefaces.model.chart,org.primefaces.component.api,javax.faces.componen
+ t.behavior&quot;;version=&quot;3.5&quot;,org.primefaces.component.export;uses:=&quot;java
+ x.el,javax.faces.component,javax.faces.context,org.primefaces.compone
+ nt.api,org.primefaces.component.datatable,javax.faces,javax.faces.eve
+ nt,javax.faces.view.facelets,org.apache.poi.ss.usermodel,org.apache.p
+ oi.hssf.usermodel,javax.faces.application,javax.faces.component.html,
+ javax.faces.convert,com.lowagie.text.pdf,org.primefaces.component.col
+ umn,com.lowagie.text,org.primefaces.component.columns&quot;;version=&quot;3.5&quot;,
+ org.primefaces.component.remotecommand;uses:=&quot;javax.el,javax.faces.co
+ mponent,javax.faces.application,javax.faces.context,org.primefaces.co
+ mponent.api,javax.faces,org.primefaces.util,org.primefaces.renderkit,
+ javax.faces.event&quot;;version=&quot;3.5&quot;,org.primefaces.component.chart;uses:
+ =&quot;javax.faces.component,javax.faces.context,org.primefaces.renderkit,
+ org.primefaces.model.chart,javax.faces.convert,org.primefaces.event,j
+ avax.faces.component.behavior,javax.faces.event&quot;;version=&quot;3.5&quot;,org.pr
+ imefaces.component.button;uses:=&quot;javax.el,javax.faces.component,javax
+ .faces.application,javax.faces.context,javax.faces.component.html,org
+ .primefaces.component.api,org.primefaces.util,javax.faces.component.b
+ ehavior,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.compon
+ ent.submenu;uses:=&quot;javax.el,javax.faces.component,javax.faces.applica
+ tion,javax.faces.context&quot;;version=&quot;3.5&quot;,org.primefaces.facelets;uses:
+ =&quot;javax.el,javax.faces.context,javax.faces.el,javax.faces.view.facele
+ ts&quot;;version=&quot;3.5&quot;,org.primefaces.component.messages;uses:=&quot;javax.el,j
+ avax.faces.component,javax.faces.application,javax.faces.context,org.
+ primefaces.component.api,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.
+ primefaces.component.progressbar;uses:=&quot;javax.el,javax.faces.componen
+ t,javax.faces.application,javax.faces.context,org.primefaces.componen
+ t.api,javax.faces.component.behavior,javax.faces.event,org.primefaces
+ .context,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,
+ org.primefaces.json;version=&quot;3.5&quot;,org.primefaces.component.tieredmenu
+ ;uses:=&quot;javax.el,javax.faces.component,javax.faces.application,javax.
+ faces.context,org.primefaces.component.api,org.primefaces.model,org.p
+ rimefaces.component.menu,org.primefaces.component.menuitem,org.primef
+ aces.util,org.primefaces.component.submenu,org.primefaces.component.s
+ eparator&quot;;version=&quot;3.5&quot;,org.primefaces.component.panel;uses:=&quot;javax.e
+ l,javax.faces.context,javax.faces.event,javax.faces.component,javax.f
+ aces.application,org.primefaces.event,org.primefaces.component.api,ja
+ vax.faces.component.behavior,org.primefaces.model,org.primefaces.comp
+ onent.menu,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5
+ &quot;,org.primefaces.model.map;version=&quot;3.5&quot;,org.primefaces.component.com
+ mandlink;uses:=&quot;javax.el,javax.faces.component,javax.faces.applicatio
+ n,javax.faces.context,javax.faces.component.html,org.primefaces.compo
+ nent.api,javax.faces,org.primefaces.util,org.primefaces.renderkit,jav
+ ax.faces.event&quot;;version=&quot;3.5&quot;,org.primefaces.component.datatable;uses
+ :=&quot;org.primefaces.component.rowexpansion,javax.faces.context,org.prim
+ efaces.component.column,org.primefaces.event.data,org.primefaces.comp
+ onent.datatable.feature,javax.faces,javax.faces.component,javax.faces
+ .application,org.primefaces.event,org.primefaces.component.columngrou
+ p,org.primefaces.model,javax.el,org.primefaces.component.subtable,jav
+ ax.faces.model,org.primefaces.component.summaryrow,javax.faces.event,
+ org.primefaces.context,org.primefaces.component.api,javax.faces.compo
+ nent.behavior,org.primefaces.component.columns,org.primefaces.facelet
+ s,javax.faces.view.facelets,org.primefaces.component.celleditor,org.p
+ rimefaces.util,org.primefaces.component.row,org.primefaces.renderkit&quot;
+ ;version=&quot;3.5&quot;,org.primefaces.component.watermark;uses:=&quot;javax.el,jav
+ ax.faces.component,javax.faces.application,javax.faces.context,org.pr
+ imefaces.component.api,javax.faces,org.primefaces.util,org.primefaces
+ .renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.menubutton;uses:=&quot;
+ javax.el,javax.faces.component,javax.faces.application,javax.faces.co
+ ntext,org.primefaces.component.api,org.primefaces.model,org.primeface
+ s.component.menu,javax.faces,org.primefaces.component.menuitem,org.pr
+ imefaces.util,org.primefaces.component.separator&quot;;version=&quot;3.5&quot;,org.p
+ rimefaces.component.notificationbar;uses:=&quot;javax.el,javax.faces.compo
+ nent,javax.faces.application,javax.faces.context,org.primefaces.compo
+ nent.api,org.primefaces.util,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,
+ org.primefaces.component.inputtextarea;uses:=&quot;javax.el,javax.faces.co
+ ntext,javax.faces.event,javax.faces.component,javax.faces.application
+ ,org.primefaces.event,javax.faces.component.html,org.primefaces.compo
+ nent.api,javax.faces.component.behavior,org.primefaces.facelets,javax
+ .faces.view.facelets,javax.faces,org.primefaces.util,org.primefaces.r
+ enderkit&quot;;version=&quot;3.5&quot;,org.primefaces.component.focus;uses:=&quot;javax.e
+ l,javax.faces.component,javax.faces.application,javax.faces.context,j
+ avax.faces,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,org.primefaces.com
+ ponent.splitbutton;uses:=&quot;javax.el,javax.faces.component,javax.faces.
+ application,javax.faces.context,javax.faces.component.html,org.primef
+ aces.component.api,org.primefaces.component.commandbutton,org.primefa
+ ces.component.separator,javax.faces.event,javax.faces,org.primefaces.
+ component.menuitem,org.primefaces.util,javax.faces.component.behavior
+ &quot;;version=&quot;3.5&quot;,org.primefaces.component.dashboard;uses:=&quot;javax.el,ja
+ vax.faces.context,javax.faces.event,javax.faces.component,javax.faces
+ .application,org.primefaces.event,org.primefaces.component.api,javax.
+ faces.component.behavior,org.primefaces.model,org.primefaces.util,org
+ .primefaces.component.panel,org.primefaces.renderkit&quot;;version=&quot;3.5&quot;,o
+ rg.primefaces.util;uses:=&quot;javax.faces.context,javax.faces.component,j
+ avax.faces,javax.el,javax.faces.application,javax.faces.model,javax.f
+ aces.convert,org.primefaces.component.api,javax.faces.validator&quot;;vers
+ ion=&quot;3.5&quot;,org.primefaces.component.chart.bar;uses:=&quot;javax.el,javax.fa
+ ces.component,org.primefaces.component.chart,javax.faces.application,
+ javax.faces.context,org.primefaces.component.api,org.primefaces.model
+ .chart,javax.faces.component.behavior&quot;;version=&quot;3.5&quot;
+Tool: Bnd-1.43.0
+Bundle-Name: primefaces
+Bundle-Version: 3.5.0
+Bnd-LastModified: 1359970151559
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Import-Package: com.lowagie.text;resolution:=optional,com.lowagie.text
+ .pdf;resolution:=optional,com.sun.syndication.feed.synd;resolution:=o
+ ptional;version=&quot;[1.0,2)&quot;,com.sun.syndication.io;resolution:=optional
+ ;version=&quot;[1.0,2)&quot;,javax.el,javax.faces;version=&quot;[2.1,3)&quot;,javax.faces
+ .application;version=&quot;[2.1,3)&quot;,javax.faces.component;version=&quot;[2.1,3)
+ &quot;,javax.faces.component.behavior;version=&quot;[2.1,3)&quot;,javax.faces.compon
+ ent.html;version=&quot;[2.1,3)&quot;,javax.faces.component.visit;version=&quot;[2.1,
+ 3)&quot;,javax.faces.context;version=&quot;[2.1,3)&quot;,javax.faces.convert;version
+ =&quot;[2.1,3)&quot;,javax.faces.el;version=&quot;[2.1,3)&quot;,javax.faces.event;version
+ =&quot;[2.1,3)&quot;,javax.faces.model;version=&quot;[2.1,3)&quot;,javax.faces.render;ver
+ sion=&quot;[2.1,3)&quot;,javax.faces.validator;version=&quot;[2.1,3)&quot;,javax.faces.vi
+ ew;version=&quot;[2.1,3)&quot;,javax.faces.view.facelets;version=&quot;[2.1,3)&quot;,java
+ x.imageio,javax.servlet,javax.servlet.http,javax.xml.bind,org.apache.
+ commons.fileupload;resolution:=optional;version=&quot;[1.2,2)&quot;,org.apache.
+ commons.fileupload.disk;resolution:=optional;version=&quot;[1.2,2)&quot;,org.ap
+ ache.commons.fileupload.servlet;resolution:=optional;version=&quot;[1.2,2)
+ &quot;,org.apache.poi.hssf.usermodel;resolution:=optional,org.apache.poi.s
+ s.usermodel;resolution:=optional,org.atmosphere.cpr;resolution:=optio
+ nal,org.atmosphere.handler;resolution:=optional,org.atmosphere.interc
+ eptor;resolution:=optional,org.slf4j;resolution:=optional;version=&quot;[1
+ .6,2)&quot;
+Bundle-SymbolicName: org.primefaces
+
+</pre>
+            </div> <!-- /container -->
+        </div><!-- /row-->
+    </div><!-- /container main-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Nov 17, 2020 9:58:55 AM</div>
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+    <script src="resources/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="resources/libraries/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-properties.js"></script>
+    <script type="text/javascript" src="resources/libraries/snippet/jquery.snippet.java-manifest.js"></script>
+    <script type="text/javascript" src="resources/libraries/sausage/jquery.sausage.min.js"></script>
+
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+        $(window).on("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+        });
+        function offsetAnchor() {
+            if(location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 50);
+            }
+        }
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 1);
+        $(document).ready(function(){
+            $("pre").snippet("manifest",{style:"ide-eclipse", showNum:true,boxFill:"#ffeeb9", box: "" });
+
+
+
+
+            $('code[class]').each(function(){
+                 var codeSyntax = ($(this).attr('class'));
+                 if(codeSyntax) {
+                    $(this).parent().snippet(codeSyntax,{style:'ide-eclipse', menu:false, showNum:false});
+                 }
+            });
+            $(window).sausage({ page: 'li.box' });
+            $(window).resize(function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+
+            // Deprecated
+            // $(window).load(function () {
+            //     $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            // });
+            $(window).on('load', function () {
+                $('div.sausage-set').css('top', parseInt($('#main-navbar').css("height")));
+            });
+        });
+
+        function qs(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+            return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function() {
+            var defaultProjectID = 3838192;
+            var selectedProject = qs("project");
+            if (!selectedProject)
+                selectedProject = defaultProjectID;
+
+            $(".project-specific").each(function(index, element) {
+                var currentProject = $(element).data("project-id");
+
+                if (currentProject == selectedProject)
+                    $(element).show();
+                else
+                    $(element).remove();
+            });
+            $("#main-navbar").show();
+        });
+    </script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

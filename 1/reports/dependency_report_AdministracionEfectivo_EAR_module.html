@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+            AdministracionEfectivo EAR module -
+        Dependencies
+    </title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen">
+    <link href="resources/img/mta-icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+</head>
+<body role="document">
+
+    <!-- Navbar -->
+    <div id="main-navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+              <strong class="wu-navbar-header">Migration Toolkit for Applications</strong><img align="right" class="wu-navbar-header" src="resources/img/Logo-RedHat-A-Reverse-RGB.png" />
+            </span>        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ApplicationDetails_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="Unparsable_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Unparsable
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ejbreport_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon ejb-nav-logo"></i>
+                      EJBs
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="server_resources_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon server-resource-nav-logo"></i>
+                      Server Resources
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="jpa_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon jpa-nav-logo"></i>
+                      JPA
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="tattletale_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon tattletale-nav-logo"></i>
+                      Tattletale
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="hardcoded_ipsAdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                      Hard-coded IP Addresses
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="ignoredfiles_AdministracionEfectivo_EAR_module.html">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                      Ignored Files
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_AdministracionEfectivo_EAR_module.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.jboss.org/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+        </div><!-- /.nav-collapse -->
+    </div>
+    <!-- / Navbar -->
+
+    <div class="container-fluid" role="main">
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Dependencies
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report lists all found Java libraries embedded within the analyzed application."></i></div>
+                        <div class="path">AdministracionEfectivo.ear</div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid theme-showcase" role="main">
+
+            <div class="dependencies">
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jdtcore-3.1.0.jar" class="panel-heading">
+                            <h3 class="panel-title">jdtcore-3.1.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jdtcore-3.1.0.jar-hash">c5e3e72ae7220118c3da808628ec7016d4d8aef2</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jdtcore-3.1.0.jar-org">%providerName</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jdtcore-3.1.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jdtcore-3.1.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jdtcore-3.1.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar" class="panel-heading">
+                            <h3 class="panel-title">AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar-maven">
+                                            <a id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;b19e87ba5680374bd3c84c93a66a26c328884fa4&quot;" target="_blank">AdministracionEfectivoGrupo:AdministracionEfectivo-ejb:0.0.1-SNAPSHOT</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar-hash">b19e87ba5680374bd3c84c93a66a26c328884fa4</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar-version">0.0.1-SNAPSHOT</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/AdministracionEfectivo-ejb-0.0.1-SNAPSHOT.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar" class="panel-heading">
+                            <h3 class="panel-title">AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar-maven">
+                                            <a id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;8a60c83b8400ea57eef1ced5dba800690297497b&quot;" target="_blank">AdministracionEfectivoGrupo:AdministracionEfectivo-jpa:0.0.1-SNAPSHOT</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar-hash">8a60c83b8400ea57eef1ced5dba800690297497b</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar-version">0.0.1-SNAPSHOT</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/AdministracionEfectivo-jpa-0.0.1-SNAPSHOT.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar" class="panel-heading">
+                            <h3 class="panel-title">AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar-maven">
+                                            <a id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;88e7ca56164e0ed7c29a9c30c008a060fed639e3&quot;" target="_blank">AdministracionEfectivoGrupo:AdministracionEfectivo-seguridad:0.0.1-SNAPSHOT</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar-hash">88e7ca56164e0ed7c29a9c30c008a060fed639e3</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar-version">0.0.1-SNAPSHOT</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/AdministracionEfectivo-seguridad-0.0.1-SNAPSHOT.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war" class="panel-heading">
+                            <h3 class="panel-title">AdministracionEfectivo-web-0.0.1-SNAPSHOT.war</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war-maven">
+                                            <a id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war-gav" href="http://search.maven.org/#search|ga|1|1:&quot;916969d078a0f010c96224e70d681e22b57e65ca&quot;" target="_blank">AdministracionEfectivoGrupo:AdministracionEfectivo-web:0.0.1-SNAPSHOT</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war-hash">916969d078a0f010c96224e70d681e22b57e65ca</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war-version">0.0.1-SNAPSHOT</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="AdministracionEfectivo-web-0.0.1-SNAPSHOT.war-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="validation-api-1.0.0.GA.jar" class="panel-heading">
+                            <h3 class="panel-title">validation-api-1.0.0.GA.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="validation-api-1.0.0.GA.jar-maven">
+                                            <a id="validation-api-1.0.0.GA.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e&quot;" target="_blank">javax.validation:validation-api:1.0.0.GA</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="validation-api-1.0.0.GA.jar-hash">b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="validation-api-1.0.0.GA.jar-version">1.0.0.GA</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="validation-api-1.0.0.GA.jar-org">Sun</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="validation-api-1.0.0.GA.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/validation-api-1.0.0.GA.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/validation-api-1.0.0.GA.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="castor-1.2.jar" class="panel-heading">
+                            <h3 class="panel-title">castor-1.2.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="castor-1.2.jar-maven">
+                                            <a id="castor-1.2.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;351847d8a41175565b5faa54fab42fe20fe6cc91&quot;" target="_blank">org.codehaus.castor:castor:1.2</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="castor-1.2.jar-hash">351847d8a41175565b5faa54fab42fe20fe6cc91</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="castor-1.2.jar-version">1.2</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="castor-1.2.jar-org">Codehaus</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="castor-1.2.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/castor-1.2.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/castor-1.2.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="commons-beanutils-1.8.0.jar" class="panel-heading">
+                            <h3 class="panel-title">commons-beanutils-1.8.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="commons-beanutils-1.8.0.jar-maven">
+                                            <a id="commons-beanutils-1.8.0.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;0c651d5103c649c12b20d53731643e5fffceb536&quot;" target="_blank">commons-beanutils:commons-beanutils:1.8.0</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="commons-beanutils-1.8.0.jar-hash">0c651d5103c649c12b20d53731643e5fffceb536</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="commons-beanutils-1.8.0.jar-version">1.8.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="commons-beanutils-1.8.0.jar-org">The Apache Software Foundation</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="commons-beanutils-1.8.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/commons-beanutils-1.8.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/commons-beanutils-1.8.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="commons-digester-2.1.jar" class="panel-heading">
+                            <h3 class="panel-title">commons-digester-2.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="commons-digester-2.1.jar-maven">
+                                            <a id="commons-digester-2.1.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;73a8001e7a54a255eef0f03521ec1805dc738ca0&quot;" target="_blank">commons-digester:commons-digester:2.1</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="commons-digester-2.1.jar-hash">73a8001e7a54a255eef0f03521ec1805dc738ca0</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="commons-digester-2.1.jar-version">2.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="commons-digester-2.1.jar-org">The Apache Software Foundation</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="commons-digester-2.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/commons-digester-2.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/commons-digester-2.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="commons-logging-1.1.1.jar" class="panel-heading">
+                            <h3 class="panel-title">commons-logging-1.1.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="commons-logging-1.1.1.jar-maven">
+                                            <a id="commons-logging-1.1.1.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;5043bfebc3db072ed80fbd362e7caf00e885d8ae&quot;" target="_blank">commons-logging:commons-logging:1.1.1</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="commons-logging-1.1.1.jar-hash">5043bfebc3db072ed80fbd362e7caf00e885d8ae</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="commons-logging-1.1.1.jar-version">1.1.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="commons-logging-1.1.1.jar-org">Apache Software Foundation</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="commons-logging-1.1.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/commons-logging-1.1.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/commons-logging-1.1.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="xml-apis-1.3.02.jar" class="panel-heading">
+                            <h3 class="panel-title">xml-apis-1.3.02.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="xml-apis-1.3.02.jar-hash">dc7315e359b5e43f20131414d60b5c307aace975</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="xml-apis-1.3.02.jar-version">1.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="xml-apis-1.3.02.jar-org">World Wide Web Consortium</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="xml-apis-1.3.02.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/xml-apis-1.3.02.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/xml-apis-1.3.02.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="hibernate-commons-annotations-4.0.1.Final.jar" class="panel-heading">
+                            <h3 class="panel-title">hibernate-commons-annotations-4.0.1.Final.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="hibernate-commons-annotations-4.0.1.Final.jar-maven">
+                                            <a id="hibernate-commons-annotations-4.0.1.Final.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;78bcf608d997d0529be2f4f781fdc89e801c9e88&quot;" target="_blank">org.hibernate.common:hibernate-commons-annotations:4.0.1.Final</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="hibernate-commons-annotations-4.0.1.Final.jar-hash">78bcf608d997d0529be2f4f781fdc89e801c9e88</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="hibernate-commons-annotations-4.0.1.Final.jar-version">4.0.1.Final</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="hibernate-commons-annotations-4.0.1.Final.jar-org">
+        Hibernate.org
+        http://hibernate.org
+    </dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="hibernate-commons-annotations-4.0.1.Final.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/hibernate-commons-annotations-4.0.1.Final.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="hibernate-validator-4.1.0.Final.jar" class="panel-heading">
+                            <h3 class="panel-title">hibernate-validator-4.1.0.Final.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="hibernate-validator-4.1.0.Final.jar-maven">
+                                            <a id="hibernate-validator-4.1.0.Final.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;785cceeb0b0dbd03367f45cd60eb26cd48167640&quot;" target="_blank">org.hibernate:hibernate-validator:4.1.0.Final</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="hibernate-validator-4.1.0.Final.jar-hash">785cceeb0b0dbd03367f45cd60eb26cd48167640</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="hibernate-validator-4.1.0.Final.jar-version">4.1.0.Final</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="hibernate-validator-4.1.0.Final.jar-org">JBoss</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="hibernate-validator-4.1.0.Final.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/hibernate-validator-4.1.0.Final.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/hibernate-validator-4.1.0.Final.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jasypt-1.9.0.jar" class="panel-heading">
+                            <h3 class="panel-title">jasypt-1.9.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jasypt-1.9.0.jar-maven">
+                                            <a id="jasypt-1.9.0.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;0857a1a55a81641c31b2a9b4b292120c1d4432bd&quot;" target="_blank">org.jasypt:jasypt:1.9.0</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jasypt-1.9.0.jar-hash">0857a1a55a81641c31b2a9b4b292120c1d4432bd</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jasypt-1.9.0.jar-version">1.9.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jasypt-1.9.0.jar-org">
+    The JASYPT team
+    http://www.jasypt.org
+  </dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jasypt-1.9.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jasypt-1.9.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jasypt-1.9.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jboss-logging-3.1.0.CR2.jar" class="panel-heading">
+                            <h3 class="panel-title">jboss-logging-3.1.0.CR2.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jboss-logging-3.1.0.CR2.jar-maven">
+                                            <a id="jboss-logging-3.1.0.CR2.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;28725380c07f917ace4e511db21cc45e9ae5a72b&quot;" target="_blank">org.jboss.logging:jboss-logging:3.1.0.CR2</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jboss-logging-3.1.0.CR2.jar-hash">28725380c07f917ace4e511db21cc45e9ae5a72b</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jboss-logging-3.1.0.CR2.jar-version">3.1.0.CR2</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jboss-logging-3.1.0.CR2.jar-org">JBoss</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jboss-logging-3.1.0.CR2.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jboss-logging-3.1.0.CR2.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jboss-logging-3.1.0.CR2.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="ojdbc6-11.2.0.3.jar" class="panel-heading">
+                            <h3 class="panel-title">ojdbc6-11.2.0.3.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="ojdbc6-11.2.0.3.jar-hash">de96f0060c7353532f4cb4a0b73d20545580fc91</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="ojdbc6-11.2.0.3.jar-version">11.2.0.3.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="ojdbc6-11.2.0.3.jar-org">Sun Microsystems Inc.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="ojdbc6-11.2.0.3.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/ojdbc6-11.2.0.3.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/ojdbc6-11.2.0.3.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="hibernate-jpa-2.0-api-1.0.1.Final.jar" class="panel-heading">
+                            <h3 class="panel-title">hibernate-jpa-2.0-api-1.0.1.Final.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="hibernate-jpa-2.0-api-1.0.1.Final.jar-maven">
+                                            <a id="hibernate-jpa-2.0-api-1.0.1.Final.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;3306a165afa81938fc3d8a0948e891de9f6b192b&quot;" target="_blank">org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="hibernate-jpa-2.0-api-1.0.1.Final.jar-hash">3306a165afa81938fc3d8a0948e891de9f6b192b</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="hibernate-jpa-2.0-api-1.0.1.Final.jar-version">1.0.1.Final</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="hibernate-jpa-2.0-api-1.0.1.Final.jar-org">
+        Hibernate.org
+        http://hibernate.org
+    </dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="hibernate-jpa-2.0-api-1.0.1.Final.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jackson-annotations-2.1.4.jar" class="panel-heading">
+                            <h3 class="panel-title">jackson-annotations-2.1.4.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jackson-annotations-2.1.4.jar-maven">
+                                            <a id="jackson-annotations-2.1.4.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;76b956e45e19e4e081a9c52a68a3c078e3b2cf17&quot;" target="_blank">com.fasterxml.jackson.core:jackson-annotations:2.1.4</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jackson-annotations-2.1.4.jar-hash">76b956e45e19e4e081a9c52a68a3c078e3b2cf17</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jackson-annotations-2.1.4.jar-version">2.1.4</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jackson-annotations-2.1.4.jar-org">FasterXML</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jackson-annotations-2.1.4.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jackson-annotations-2.1.4.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jackson-annotations-2.1.4.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jackson-core-2.1.4.jar" class="panel-heading">
+                            <h3 class="panel-title">jackson-core-2.1.4.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jackson-core-2.1.4.jar-maven">
+                                            <a id="jackson-core-2.1.4.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;08896e10f8b07918b60c835b45a05507fa213e84&quot;" target="_blank">com.fasterxml.jackson.core:jackson-core:2.1.4</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jackson-core-2.1.4.jar-hash">08896e10f8b07918b60c835b45a05507fa213e84</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jackson-core-2.1.4.jar-version">2.1.4</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jackson-core-2.1.4.jar-org">FasterXML</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jackson-core-2.1.4.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jackson-core-2.1.4.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jackson-core-2.1.4.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jasperreports-5.5.0.jar" class="panel-heading">
+                            <h3 class="panel-title">jasperreports-5.5.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jasperreports-5.5.0.jar-maven">
+                                            <a id="jasperreports-5.5.0.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;4eb362300120b5cbf0cdd9f0c59c7db2bcfdef65&quot;" target="_blank">net.sf.jasperreports:jasperreports:5.5.0</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jasperreports-5.5.0.jar-hash">4eb362300120b5cbf0cdd9f0c59c7db2bcfdef65</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jasperreports-5.5.0.jar-version">5.5.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jasperreports-5.5.0.jar-org">SourceForge</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jasperreports-5.5.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jasperreports-5.5.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jasperreports-5.5.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="javax.persistence-2.0.0.jar" class="panel-heading">
+                            <h3 class="panel-title">javax.persistence-2.0.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="javax.persistence-2.0.0.jar-hash">bff9b1d9de629095001f1a4e77f450b2d6487b07</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="javax.persistence-2.0.0.jar-version">2.0.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="javax.persistence-2.0.0.jar-org">Sun Microsystems Inc.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="javax.persistence-2.0.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/javax.persistence-2.0.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/javax.persistence-2.0.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="j2ee.jar" class="panel-heading">
+                            <h3 class="panel-title">j2ee.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="j2ee.jar-hash">802db0a65df418fc9e97a5a9e3117be306f15dea</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="j2ee.jar-version">6.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="j2ee.jar-org">Sun Microsystems, Inc.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="j2ee.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/j2ee.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="javassist-3.15.0-GA.jar" class="panel-heading">
+                            <h3 class="panel-title">javassist-3.15.0-GA.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="javassist-3.15.0-GA.jar-maven">
+                                            <a id="javassist-3.15.0-GA.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;79907309ca4bb4e5e51d4086cc4179b2611358d7&quot;" target="_blank">org.javassist:javassist:3.15.0-GA</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="javassist-3.15.0-GA.jar-hash">79907309ca4bb4e5e51d4086cc4179b2611358d7</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="javassist-3.15.0-GA.jar-version">3.15.0-GA</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="javassist-3.15.0-GA.jar-org">Shigeru Chiba</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="javassist-3.15.0-GA.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/javassist-3.15.0-GA.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/javassist-3.15.0-GA.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="slf4j-api-1.6.1.jar" class="panel-heading">
+                            <h3 class="panel-title">slf4j-api-1.6.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="slf4j-api-1.6.1.jar-maven">
+                                            <a id="slf4j-api-1.6.1.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;6f3b8a24bf970f17289b234284c94f43eb42f0e4&quot;" target="_blank">org.slf4j:slf4j-api:1.6.1</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="slf4j-api-1.6.1.jar-hash">6f3b8a24bf970f17289b234284c94f43eb42f0e4</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="slf4j-api-1.6.1.jar-version">1.6.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="slf4j-api-1.6.1.jar-org">SLF4J</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="slf4j-api-1.6.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/slf4j-api-1.6.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/slf4j-api-1.6.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="slf4j-log4j12-1.7.5.jar" class="panel-heading">
+                            <h3 class="panel-title">slf4j-log4j12-1.7.5.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="slf4j-log4j12-1.7.5.jar-maven">
+                                            <a id="slf4j-log4j12-1.7.5.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;6edffc576ce104ec769d954618764f39f0f0f10d&quot;" target="_blank">org.slf4j:slf4j-log4j12:1.7.5</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="slf4j-log4j12-1.7.5.jar-hash">6edffc576ce104ec769d954618764f39f0f0f10d</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="slf4j-log4j12-1.7.5.jar-version">1.7.5</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="slf4j-log4j12-1.7.5.jar-org">SLF4J</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="slf4j-log4j12-1.7.5.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/slf4j-log4j12-1.7.5.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/slf4j-log4j12-1.7.5.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-aop-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-aop-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-aop-3.0.5.RELEASE.jar-hash">0c7a17803cc10512e26e285073639543f0c7c764</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-aop-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-aop-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-aop-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-aop-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-aop-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-asm-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-asm-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-asm-3.0.5.RELEASE.jar-hash">07f22a0e9f325e6565b4ea56b479ad76311d146b</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-asm-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-asm-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-asm-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-asm-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-beans-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-beans-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-beans-3.0.5.RELEASE.jar-hash">4b352a9c3b427294e264ca4d460d07417ca9350e</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-beans-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-beans-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-beans-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-beans-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-context-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-context-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-context-3.0.5.RELEASE.jar-hash">6b05e397566cc7750d2d25f81a7441fe1aeecb75</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-context-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-context-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-context-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-context-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-core-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-core-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-core-3.0.5.RELEASE.jar-hash">1633e94943d57746ef76910489f1cd71fe667e04</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-core-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-core-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-core-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-core-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="spring-expression-3.0.5.RELEASE.jar" class="panel-heading">
+                            <h3 class="panel-title">spring-expression-3.0.5.RELEASE.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="spring-expression-3.0.5.RELEASE.jar-hash">5b8e53877cb58c94f15a0d8172da3569f4b4f3fb</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="spring-expression-3.0.5.RELEASE.jar-version">3.0.5.RELEASE</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="spring-expression-3.0.5.RELEASE.jar-org">SpringSource</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="spring-expression-3.0.5.RELEASE.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/spring-expression-3.0.5.RELEASE.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar" class="panel-heading">
+                            <h3 class="panel-title">jboss-transaction-api_1.1_spec-1.0.0.Final.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-maven">
+                                            <a id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;2ab6236535e085d86f37fd97ddfdd35c88c1a419&quot;" target="_blank">org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Final</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-hash">2ab6236535e085d86f37fd97ddfdd35c88c1a419</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-version">1.0.0.Final</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-org">JBoss</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jboss-transaction-api_1.1_spec-1.0.0.Final.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="com.ibm.ws.jsf.jar" class="panel-heading">
+                            <h3 class="panel-title">com.ibm.ws.jsf.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="com.ibm.ws.jsf.jar-hash">5337255a60cd94ab531c3ad3e84ead80c4ae6d9f</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="com.ibm.ws.jsf.jar-org">IBM</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="com.ibm.ws.jsf.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/com.ibm.ws.jsf.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="antlr-2.7.7.jar" class="panel-heading">
+                            <h3 class="panel-title">antlr-2.7.7.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="antlr-2.7.7.jar-hash">83cd2cd674a217ade95a4bb83a8a14f351f48bd0</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="antlr-2.7.7.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/antlr-2.7.7.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/antlr-2.7.7.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="aopalliance-1.0.jar" class="panel-heading">
+                            <h3 class="panel-title">aopalliance-1.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="aopalliance-1.0.jar-hash">0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="aopalliance-1.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/aopalliance-1.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/aopalliance-1.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="bcmail-jdk14-138.jar" class="panel-heading">
+                            <h3 class="panel-title">bcmail-jdk14-138.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="bcmail-jdk14-138.jar-hash">14ff2dfec8578f5f6838c4d6a77a86789afe5382</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="bcmail-jdk14-138.jar-version">1.38.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="bcmail-jdk14-138.jar-org">BouncyCastle.org</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="bcmail-jdk14-138.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/bcmail-jdk14-1.38.jar</li>
+                                            <li>AdministracionEfectivo.ear/lib/bcmail-jdk14-138.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/bcmail-jdk14-1.38.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/bcmail-jdk14-138.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="bcprov-jdk14-1.38.jar" class="panel-heading">
+                            <h3 class="panel-title">bcprov-jdk14-1.38.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="bcprov-jdk14-1.38.jar-hash">de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="bcprov-jdk14-1.38.jar-version">1.38.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="bcprov-jdk14-1.38.jar-org">BouncyCastle.org</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="bcprov-jdk14-1.38.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/bcprov-jdk14-1.38.jar</li>
+                                            <li>AdministracionEfectivo.ear/lib/bcprov-jdk14-138.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/bcprov-jdk14-1.38.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/bcprov-jdk14-138.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="bctsp-jdk14-1.38.jar" class="panel-heading">
+                            <h3 class="panel-title">bctsp-jdk14-1.38.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="bctsp-jdk14-1.38.jar-hash">4821122f8390d15f4b5ee652621e2a2bb1f1bf16</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="bctsp-jdk14-1.38.jar-version">1.38.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="bctsp-jdk14-1.38.jar-org">BouncyCastle.org</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="bctsp-jdk14-1.38.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/bctsp-jdk14-1.38.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/bctsp-jdk14-1.38.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="c3p0-0.9.1.1.jar" class="panel-heading">
+                            <h3 class="panel-title">c3p0-0.9.1.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="c3p0-0.9.1.1.jar-hash">302704f30c6e7abb7a0457f7771739e03c973e80</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="c3p0-0.9.1.1.jar-version">0.9.1.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="c3p0-0.9.1.1.jar-org">Machinery For Change, Inc.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="c3p0-0.9.1.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/c3p0-0.9.1.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/c3p0-0.9.1.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="commons-collections-2.1.jar" class="panel-heading">
+                            <h3 class="panel-title">commons-collections-2.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="commons-collections-2.1.jar-hash">8e10f94f30ea064eee3cb94f864dc9c31e30e8af</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="commons-collections-2.1.jar-version">2.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="commons-collections-2.1.jar-org">Apache Software Foundation</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="commons-collections-2.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/commons-collections-2.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/commons-collections-2.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="dom4j-1.6.1.jar" class="panel-heading">
+                            <h3 class="panel-title">dom4j-1.6.1.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="dom4j-1.6.1.jar-hash">5d3ccc056b6f056dbf0dddfdf43894b9065a8f94</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="dom4j-1.6.1.jar-version">1.6.1</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="dom4j-1.6.1.jar-org">MetaStuff Ltd.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="dom4j-1.6.1.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/dom4j-1.6.1.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/dom4j-1.6.1.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="hibernate-core-4.1.4.Final.jar" class="panel-heading">
+                            <h3 class="panel-title">hibernate-core-4.1.4.Final.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="hibernate-core-4.1.4.Final.jar-hash">811b5e2b3e13adae69078f8435990812276ea9df</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="hibernate-core-4.1.4.Final.jar-version">4.1.4.Final</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="hibernate-core-4.1.4.Final.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/hibernate-core-4.1.4.Final.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/hibernate-core-4.1.4.Final.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="itext-2.1.7.js2.jar" class="panel-heading">
+                            <h3 class="panel-title">itext-2.1.7.js2.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="itext-2.1.7.js2.jar-hash">72dfda77cda7f61377329dbdda0081a20b208ed7</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="itext-2.1.7.js2.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/itext-2.1.7.js2.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/itext-2.1.7.js2.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jackson-databind-2.1.4.jar" class="panel-heading">
+                            <h3 class="panel-title">jackson-databind-2.1.4.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="jackson-databind-2.1.4.jar-maven">
+                                            <a id="jackson-databind-2.1.4.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;61d1e5aaf474462b0c9bfef8aeb6a7205bd56a90&quot;" target="_blank">com.fasterxml.jackson.core:jackson-databind:2.1.4</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jackson-databind-2.1.4.jar-hash">61d1e5aaf474462b0c9bfef8aeb6a7205bd56a90</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="jackson-databind-2.1.4.jar-version">2.1.4</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="jackson-databind-2.1.4.jar-org">FasterXML</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jackson-databind-2.1.4.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jackson-databind-2.1.4.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jackson-databind-2.1.4.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jcommon-1.0.15.jar" class="panel-heading">
+                            <h3 class="panel-title">jcommon-1.0.15.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jcommon-1.0.15.jar-hash">6495e4f3777a24fd34c1544a8606243a600365c3</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jcommon-1.0.15.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jcommon-1.0.15.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jcommon-1.0.15.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="jfreechart-1.0.12.jar" class="panel-heading">
+                            <h3 class="panel-title">jfreechart-1.0.12.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="jfreechart-1.0.12.jar-hash">47e8a2e9e052d292e416a6fd5292a77b54c48fac</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="jfreechart-1.0.12.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/jfreechart-1.0.12.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/jfreechart-1.0.12.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="log4j-1.2.12.jar" class="panel-heading">
+                            <h3 class="panel-title">log4j-1.2.12.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="log4j-1.2.12.jar-hash">057b8740427ee6d7b0b60792751356cad17dc0d9</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="log4j-1.2.12.jar-version">1.2.12</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="log4j-1.2.12.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/log4j-1.2.12.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/log4j-1.2.12.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="primefaces-3.5.jar" class="panel-heading">
+                            <h3 class="panel-title">primefaces-3.5.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="primefaces-3.5.jar-maven">
+                                            <a id="primefaces-3.5.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;1e2f64cc5af306f6b7833e8c4e69ededdf0e6393&quot;" target="_blank">org.primefaces:primefaces:3.5</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="primefaces-3.5.jar-hash">1e2f64cc5af306f6b7833e8c4e69ededdf0e6393</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="primefaces-3.5.jar-version">3.5</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="primefaces-3.5.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/primefaces-3.5.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="quartz-2.2.0.jar" class="panel-heading">
+                            <h3 class="panel-title">quartz-2.2.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="quartz-2.2.0.jar-maven">
+                                            <a id="quartz-2.2.0.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;2eb16fce055d5f3c9d65420f6fc4efd3a079a3d8&quot;" target="_blank">org.quartz-scheduler:quartz:2.2.0</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="quartz-2.2.0.jar-hash">2eb16fce055d5f3c9d65420f6fc4efd3a079a3d8</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="quartz-2.2.0.jar-version">2.2.0</dd>
+                                    <dt class="trait">Organization:</dt>
+                                    <dd id="quartz-2.2.0.jar-org">Terracotta, Inc.</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="quartz-2.2.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/quartz-2.2.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/quartz-2.2.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-primary dependency">
+                        <div id="quartz-jobs-2.2.0.jar" class="panel-heading">
+                            <h3 class="panel-title">quartz-jobs-2.2.0.jar</h3>
+                        </div>
+                        <div class="panel-body">
+                            <dl class="traits dl-horizontal">
+                                    <dt class="trait">Maven coordinates:</dt>
+                                    <dd id="quartz-jobs-2.2.0.jar-maven">
+                                            <a id="quartz-jobs-2.2.0.jar-gav" href="http://search.maven.org/#search|ga|1|1:&quot;865fa48d18a3fee0164a14423f0fbef3dc5fd04b&quot;" target="_blank">org.quartz-scheduler:quartz-jobs:2.2.0</a>
+                                    </dd>
+                                    <dt class="trait">SHA1 hash:</dt>
+                                    <dd id="quartz-jobs-2.2.0.jar-hash">865fa48d18a3fee0164a14423f0fbef3dc5fd04b</dd>
+                                    <dt class="trait">Version:</dt>
+                                    <dd id="quartz-jobs-2.2.0.jar-version">2.2.0</dd>
+                                <dt class="trait">Found at path:</dt>
+                                <dd>
+                                    <ul id="quartz-jobs-2.2.0.jar-paths" class="list-unstyled">
+                                            <li>AdministracionEfectivo.ear/lib/quartz-jobs-2.2.0.jar</li>
+                                            <li>AdministracionEfectivo.ear/AdministracionEfectivo-web-0.0.1-SNAPSHOT.war/WEB-INF/lib/quartz-jobs-2.2.0.jar</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+            </div>
+
+        </div> <!-- /container -->
+    </div><!--/row-->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Nov 17, 2020 9:58:57 AM</div>    </div><!-- /container main-->
+
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</body>
+</html>

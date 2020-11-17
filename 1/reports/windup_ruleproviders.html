@@ -75,7 +75,7 @@
                                         <a name="RegisterApiPackagesInTypeInterestFactoryRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.mavenize
-			.RegisterApiPackagesInTypeInterestFactoryRuleProvider$2@5b19de0d
+			.RegisterApiPackagesInTypeInterestFactoryRuleProvider$2@1b459731
 )
 withId(&quot;RegisterApiPackagesInTypeInterestFactoryRuleProvider_1&quot;)</span>
                                     </td>
@@ -102,7 +102,7 @@ withId(&quot;RegisterApiPackagesInTypeInterestFactoryRuleProvider_1&quot;)</span
                                         <a name="RegisterApiPackagesInTypeInterestFactoryRuleProvider_2" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.mavenize
-			.RegisterApiPackagesInTypeInterestFactoryRuleProvider$1@41a46f4a
+			.RegisterApiPackagesInTypeInterestFactoryRuleProvider$1@3e39009e
 )
 withId(&quot;RegisterApiPackagesInTypeInterestFactoryRuleProvider_2&quot;)</span>
                                     </td>
@@ -145,7 +145,7 @@ withId(&quot;RegisterApiPackagesInTypeInterestFactoryRuleProvider_2&quot;)</span
                                         <a name="CopyJavaConfigToGraphRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.config
-			.CopyJavaConfigToGraphRuleProvider$1@3da06549
+			.CopyJavaConfigToGraphRuleProvider$1@2fc69e5b
 )
 withId(&quot;CopyJavaConfigToGraphRuleProvider_1&quot;)</span>
                                     </td>
@@ -187,7 +187,7 @@ withId(&quot;CopyJavaConfigToGraphRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="LoadIssueCategoriesRuleProvider_attachToGraph" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.perform(org.jboss.windup.reporting.category.LoadIssueCategoriesRuleProvider$1@7a2816a4
+	.perform(org.jboss.windup.reporting.category.LoadIssueCategoriesRuleProvider$1@240fd8d4
 )
 withId(&quot;LoadIssueCategoriesRuleProvider_attachToGraph&quot;)</span>
                                     </td>
@@ -230,7 +230,7 @@ withId(&quot;LoadIssueCategoriesRuleProvider_attachToGraph&quot;)</span>
                                         <a name="IgnoredArchivesConfigLoadingRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.archives.config
-			.IgnoredArchivesConfigLoadingRuleProvider$1@74f0e1d2
+			.IgnoredArchivesConfigLoadingRuleProvider$1@107d0742
 )
 withId(&quot;IgnoredArchivesConfigLoadingRuleProvider_1&quot;)</span>
                                     </td>
@@ -274,8 +274,8 @@ withId(&quot;IgnoredArchivesConfigLoadingRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.archives.config
 			
-		.ArchiveIdentificationConfigLoadingRuleProvider$AddDelimitedFileIndexOperation@16
-			cc0e39
+		.ArchiveIdentificationConfigLoadingRuleProvider$AddDelimitedFileIndexOperation@66
+			b6c823
 )
 withId(&quot;ArchiveIdentificationConfigLoadingRuleProvider_1&quot;)</span>
                                     </td>
@@ -303,8 +303,8 @@ withId(&quot;ArchiveIdentificationConfigLoadingRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.archives.config
 			
-		.ArchiveIdentificationConfigLoadingRuleProvider$AddLuceneFileIndexOperation@2878b
-			b84
+		.ArchiveIdentificationConfigLoadingRuleProvider$AddLuceneFileIndexOperation@7d99a
+			6e8
 )
 withId(&quot;ArchiveIdentificationConfigLoadingRuleProvider_2&quot;)</span>
                                     </td>
@@ -396,7 +396,8 @@ withId(&quot;GatherIgnoredFileNamesRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.graph.model.WindupConfigurationModel)
 		.gremlin()org.jboss.windup.rules.apps.java.scan.provider
-		.DiscoverFilesAndTypesRuleProvider$$Lambda$1278/791841690@6dba8e5.as(default)
+		.DiscoverFilesAndTypesRuleProvider$$Lambda$1277/1972266318@441a6165
+		.as(default)
 )
 	.perform(Iteration.over(?).perform(RecurseDirectoryAndAddFiles)
 )
@@ -474,7 +475,7 @@ withId(&quot;DiscoverFilesAndTypesRuleProvider_2&quot;)</span>
                                         <a name="UnzipArchivesToOutputRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.graph.model.ArchiveModel).gremlin()org.jboss
-		.windup.config.query.Query$1@3889c9b3.as(default)
+		.windup.config.query.Query$1@708f0c89.as(default)
 )
 	.perform(Perform.all(Iteration.over(?).perform(Perform
 			
@@ -484,7 +485,7 @@ withId(&quot;DiscoverFilesAndTypesRuleProvider_2&quot;)</span>
 withId(&quot;UnzipArchivesToOutputRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 52</div>
+                                        <div>Vertices Created: 4,390</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -506,7 +507,7 @@ withId(&quot;UnzipArchivesToOutputRuleProvider_1&quot;)</span>
                                         <a name="UnzipArchivesToOutputRuleProvider_2" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.graph.model.ArchiveModel).gremlin()org.jboss
-		.windup.config.query.Query$1@44185e1b.as(default)
+		.windup.config.query.Query$1@48fa3796.as(default)
 )
 	.perform(Iteration.over(?).perform(DuplicateArchiveOperation with var &#39;default_instance&#39;)
 )
@@ -639,10 +640,10 @@ withId(&quot;DiscoverArchiveManifestFilesRuleProvider_1&quot;)</span>
                             </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.java$_ld
+                                        FileMapping_.*\.java$_Ye
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.java$_ld" class="anchor"></a>
+                                        <a name="FileMapping_.*\.java$_Ye" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.java$).to([interface org.jboss
 		.windup.rules.apps.java.model.JavaSourceFileModel])
@@ -650,7 +651,7 @@ withId(&quot;DiscoverArchiveManifestFilesRuleProvider_1&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.java$).to([interface org.jboss
 			.windup.rules.apps.java.model.JavaSourceFileModel])
 )
-withId(&quot;FileMapping_.*\.java$_ld&quot;)</span>
+withId(&quot;FileMapping_.*\.java$_Ye&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -669,10 +670,10 @@ withId(&quot;FileMapping_.*\.java$_ld&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.class$_j1
+                                        FileMapping_.*\.class$_BU
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.class$_j1" class="anchor"></a>
+                                        <a name="FileMapping_.*\.class$_BU" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.class$).to([interface org
 		.jboss.windup.rules.apps.java.model.JavaClassFileModel])
@@ -680,7 +681,7 @@ withId(&quot;FileMapping_.*\.java$_ld&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.class$).to([interface org
 			.jboss.windup.rules.apps.java.model.JavaClassFileModel])
 )
-withId(&quot;FileMapping_.*\.class$_j1&quot;)</span>
+withId(&quot;FileMapping_.*\.class$_BU&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -727,7 +728,7 @@ withId(&quot;FileMapping_.*\.class$_j1&quot;)</span>
 withId(&quot;DiscoverOrganizationByPackageStructureProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 3</div>
+                                        <div>Vertices Created: 17</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -851,10 +852,10 @@ withId(&quot;DiscoverPropertiesFilesRuleProvider_1&quot;)</span>
                             </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.xml$_el
+                                        FileMapping_.*\.xml$_nO
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.xml$_el" class="anchor"></a>
+                                        <a name="FileMapping_.*\.xml$_nO" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.xml$).to([interface org.jboss
 		.windup.rules.apps.xml.model.XmlFileModel])
@@ -862,7 +863,7 @@ withId(&quot;DiscoverPropertiesFilesRuleProvider_1&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.xml$).to([interface org.jboss
 			.windup.rules.apps.xml.model.XmlFileModel])
 )
-withId(&quot;FileMapping_.*\.xml$_el&quot;)</span>
+withId(&quot;FileMapping_.*\.xml$_nO&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -881,10 +882,10 @@ withId(&quot;FileMapping_.*\.xml$_el&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.xmi$_Xe
+                                        FileMapping_.*\.xmi$_Dd
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.xmi$_Xe" class="anchor"></a>
+                                        <a name="FileMapping_.*\.xmi$_Dd" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.xmi$).to([interface org.jboss
 		.windup.rules.apps.xml.model.XmlFileModel])
@@ -892,7 +893,7 @@ withId(&quot;FileMapping_.*\.xml$_el&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.xmi$).to([interface org.jboss
 			.windup.rules.apps.xml.model.XmlFileModel])
 )
-withId(&quot;FileMapping_.*\.xmi$_Xe&quot;)</span>
+withId(&quot;FileMapping_.*\.xmi$_Dd&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -911,10 +912,10 @@ withId(&quot;FileMapping_.*\.xmi$_Xe&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.jsf$_xC
+                                        FileMapping_.*\.jsf$_JF
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.jsf$_xC" class="anchor"></a>
+                                        <a name="FileMapping_.*\.jsf$_JF" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.jsf$).to([interface org.jboss
 		.windup.rules.apps.xml.model.XmlFileModel])
@@ -922,7 +923,7 @@ withId(&quot;FileMapping_.*\.xmi$_Xe&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.jsf$).to([interface org.jboss
 			.windup.rules.apps.xml.model.XmlFileModel])
 )
-withId(&quot;FileMapping_.*\.jsf$_xC&quot;)</span>
+withId(&quot;FileMapping_.*\.jsf$_JF&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -941,10 +942,10 @@ withId(&quot;FileMapping_.*\.jsf$_xC&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.xhtml$_9g
+                                        FileMapping_.*\.xhtml$_wc
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.xhtml$_9g" class="anchor"></a>
+                                        <a name="FileMapping_.*\.xhtml$_wc" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.xhtml$).to([interface org
 		.jboss.windup.rules.apps.xml.model.XmlFileModel])
@@ -952,7 +953,7 @@ withId(&quot;FileMapping_.*\.jsf$_xC&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.xhtml$).to([interface org
 			.jboss.windup.rules.apps.xml.model.XmlFileModel])
 )
-withId(&quot;FileMapping_.*\.xhtml$_9g&quot;)</span>
+withId(&quot;FileMapping_.*\.xhtml$_wc&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -983,7 +984,7 @@ withId(&quot;FileMapping_.*\.xhtml$_9g&quot;)</span>
 withId(&quot;DiscoverXmlFilesRuleProvider_5&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 3</div>
+                                        <div>Vertices Created: 19</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -1015,10 +1016,10 @@ withId(&quot;DiscoverXmlFilesRuleProvider_5&quot;)</span>
                             </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.html$_Df
+                                        FileMapping_.*\.html$_Ih
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.html$_Df" class="anchor"></a>
+                                        <a name="FileMapping_.*\.html$_Ih" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.html$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.HtmlFileModel])
@@ -1026,7 +1027,7 @@ withId(&quot;DiscoverXmlFilesRuleProvider_5&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.html$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.HtmlFileModel])
 )
-withId(&quot;FileMapping_.*\.html$_Df&quot;)</span>
+withId(&quot;FileMapping_.*\.html$_Ih&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1045,10 +1046,10 @@ withId(&quot;FileMapping_.*\.html$_Df&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.css$_u6
+                                        FileMapping_.*\.css$_mO
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.css$_u6" class="anchor"></a>
+                                        <a name="FileMapping_.*\.css$_mO" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.css$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.CssFileModel])
@@ -1056,7 +1057,7 @@ withId(&quot;FileMapping_.*\.html$_Df&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.css$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.CssFileModel])
 )
-withId(&quot;FileMapping_.*\.css$_u6&quot;)</span>
+withId(&quot;FileMapping_.*\.css$_mO&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1075,10 +1076,10 @@ withId(&quot;FileMapping_.*\.css$_u6&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.js$_uz
+                                        FileMapping_.*\.js$_dB
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.js$_uz" class="anchor"></a>
+                                        <a name="FileMapping_.*\.js$_dB" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.js$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.JsFileModel])
@@ -1086,7 +1087,7 @@ withId(&quot;FileMapping_.*\.css$_u6&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.js$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.JsFileModel])
 )
-withId(&quot;FileMapping_.*\.js$_uz&quot;)</span>
+withId(&quot;FileMapping_.*\.js$_dB&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1121,10 +1122,10 @@ withId(&quot;FileMapping_.*\.js$_uz&quot;)</span>
                             </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.jsp$_l5
+                                        FileMapping_.*\.jsp$_TA
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.jsp$_l5" class="anchor"></a>
+                                        <a name="FileMapping_.*\.jsp$_TA" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.jsp$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.JspSourceFileModel])
@@ -1132,7 +1133,7 @@ withId(&quot;FileMapping_.*\.js$_uz&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.jsp$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.JspSourceFileModel])
 )
-withId(&quot;FileMapping_.*\.jsp$_l5&quot;)</span>
+withId(&quot;FileMapping_.*\.jsp$_TA&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1151,10 +1152,10 @@ withId(&quot;FileMapping_.*\.jsp$_l5&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.jspx$_Cl
+                                        FileMapping_.*\.jspx$_Z1
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.jspx$_Cl" class="anchor"></a>
+                                        <a name="FileMapping_.*\.jspx$_Z1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.jspx$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.JspSourceFileModel])
@@ -1162,7 +1163,7 @@ withId(&quot;FileMapping_.*\.jsp$_l5&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.jspx$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.JspSourceFileModel])
 )
-withId(&quot;FileMapping_.*\.jspx$_Cl&quot;)</span>
+withId(&quot;FileMapping_.*\.jspx$_Z1&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1181,10 +1182,10 @@ withId(&quot;FileMapping_.*\.jspx$_Cl&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.tag$_II
+                                        FileMapping_.*\.tag$_qt
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.tag$_II" class="anchor"></a>
+                                        <a name="FileMapping_.*\.tag$_qt" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.tag$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.JspSourceFileModel])
@@ -1192,7 +1193,7 @@ withId(&quot;FileMapping_.*\.jspx$_Cl&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.tag$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.JspSourceFileModel])
 )
-withId(&quot;FileMapping_.*\.tag$_II&quot;)</span>
+withId(&quot;FileMapping_.*\.tag$_qt&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1211,10 +1212,10 @@ withId(&quot;FileMapping_.*\.tag$_II&quot;)</span>
                                 </tr>
                                 <tr>
                                     <td>
-                                        FileMapping_.*\.tagx$_fn
+                                        FileMapping_.*\.tagx$_IA
                                     </td>
                                     <td>
-                                        <a name="FileMapping_.*\.tagx$_fn" class="anchor"></a>
+                                        <a name="FileMapping_.*\.tagx$_IA" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.files.FileMapping.from(.*\.tagx$).to([interface org.jboss
 		.windup.rules.apps.javaee.model.JspSourceFileModel])
@@ -1222,7 +1223,7 @@ withId(&quot;FileMapping_.*\.tag$_II&quot;)</span>
 	.perform(org.jboss.windup.rules.files.FileMapping.from(.*\.tagx$).to([interface org.jboss
 			.windup.rules.apps.javaee.model.JspSourceFileModel])
 )
-withId(&quot;FileMapping_.*\.tagx$_fn&quot;)</span>
+withId(&quot;FileMapping_.*\.tagx$_IA&quot;)</span>
                                     </td>
                                     <td>
                                         <div>Vertices Created: 0</div>
@@ -1273,7 +1274,7 @@ withId(&quot;FileMapping_.*\.tagx$_fn&quot;)</span>
 withId(&quot;DiscoverMavenProjectsRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 21</div>
+                                        <div>Vertices Created: 314</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -1318,7 +1319,7 @@ withId(&quot;DiscoverMavenProjectsRuleProvider_1&quot;)</span>
 withId(&quot;DiscoverNonMavenArchiveProjectsRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 1</div>
+                                        <div>Vertices Created: 25</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -1486,7 +1487,7 @@ withId(&quot;DiscoverMavenHierarchyRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="Mavenize-BOM-data-collection" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.perform(org.jboss.windup.rules.apps.mavenize.MavenizeRuleProvider$1@104d6756
+	.perform(org.jboss.windup.rules.apps.mavenize.MavenizeRuleProvider$1@4836d31c
 )
 withId(&quot;Mavenize-BOM-data-collection&quot;)</span>
                                     </td>
@@ -1544,7 +1545,7 @@ withId(&quot;Mavenize-BOM-file-creation&quot;)</span>
                                         <a name="Mavenize-projects-mavenization" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(And.all(Query.fromType(org.jboss.windup.graph.model.WindupConfigurationModel)
-		.as(default), org.jboss.windup.rules.apps.java.condition.SourceMode@652d60ae)
+		.as(default), org.jboss.windup.rules.apps.java.condition.SourceMode@3d14490d)
 )
 	.perform(Iteration.over(?)
 			.perform(MavenizeApplicationOperation with var &#39;default_instance&#39;)
@@ -1591,18 +1592,18 @@ withId(&quot;Mavenize-projects-mavenization&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.graph.model.DuplicateArchiveModel).as(default)
 )
-	.perform(Iteration.over(?).perform( with var &#39;null&#39;)
+	.perform(Iteration.over(?).perform( with var &#39;default_instance&#39;)
 )
 withId(&quot;DiscoverDuplicateArchiveProjectsRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 50</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -1644,13 +1645,13 @@ withId(&quot;DiscoverDuplicateArchiveProjectsRuleProvider_1&quot;)</span>
 withId(&quot;BeforeDecompileClassesRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1,614</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -1681,15 +1682,15 @@ withId(&quot;BeforeDecompileClassesRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="DecompileClassesRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@3d95d3e0
+	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@21980eb9
 )
 	.perform(org.jboss.windup.rules.apps.java.decompiler
-			.DecompileClassesRuleProvider$DecompileCondition@412f8098
+			.DecompileClassesRuleProvider$DecompileCondition@7f07a259
 )
 withId(&quot;DecompileClassesRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1,271</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -1710,10 +1711,10 @@ withId(&quot;DecompileClassesRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="DecompileClassesRuleProvider_2" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@3aa3383c
+	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@1d72096
 )
 	.perform(org.jboss.windup.rules.apps.java.decompiler
-			.CleanFromMultipleSourceFiles@340507d6
+			.CleanFromMultipleSourceFiles@1e144d80
 )
 withId(&quot;DecompileClassesRuleProvider_2&quot;)</span>
                                     </td>
@@ -1821,13 +1822,13 @@ withId(&quot;DecompileClassesRuleProvider_2&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -1858,13 +1859,13 @@ withId(&quot;DecompileClassesRuleProvider_2&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2019,7 +2020,7 @@ withId(&quot;DecompileClassesRuleProvider_2&quot;)</span>
 withId(&quot;AnalyzeJavaFilesRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6,183</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -2058,7 +2059,7 @@ withId(&quot;AnalyzeJavaFilesRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.rules.apps.xml.model.DoctypeMetaModel)
 		.gremlin()org.jboss.windup.rules.apps.javaee.rules
-		.DiscoverHibernateMappingRuleProvider$1@35033233.as(default)
+		.DiscoverHibernateMappingRuleProvider$1@2424a269.as(default)
 )
 	.perform(Iteration.over(?).perform(Discover hibernate.hbm.xml files)
 )
@@ -2157,13 +2158,13 @@ withId(&quot;ResolveWebSphereWsExtensionXmlRuleProvider_1&quot;)</span>
 withId(&quot;DiscoverSpringConfigurationFilesRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2286,7 +2287,7 @@ withId(&quot;DiscoverJBossJbpmProcessFilesRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(Query.fromType(org.jboss.windup.rules.apps.xml.model.DoctypeMetaModel)
 		.gremlin()org.jboss.windup.rules.apps.javaee.rules
-		.DiscoverHibernateConfigurationRuleProvider$1@70ffd970.as(default)
+		.DiscoverHibernateConfigurationRuleProvider$1@334b5a05.as(default)
 )
 	.perform(Iteration.over(?).perform(Discover hibernate.cfg.xml files)
 )
@@ -2333,18 +2334,18 @@ withId(&quot;DiscoverHibernateConfigurationRuleProvider_1&quot;)</span>
 	.when(FileContent.from(null).matches({taglib1}).inFilesNamed({*}.{extension})
 		.as(default)
 )
-	.perform(Iteration.over(?).perform( with var &#39;null&#39;)
+	.perform(Iteration.over(?).perform( with var &#39;default_instance&#39;)
 )
 withId(&quot;DiscoverJsfSourceFileRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 409</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2431,13 +2432,13 @@ withId(&quot;ResolveWebSphereWsBindingXmlRuleProvider_1&quot;)</span>
 withId(&quot;DiscoverJpaConfigurationXmlRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 59</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2477,13 +2478,13 @@ withId(&quot;DiscoverJpaConfigurationXmlRuleProvider_1&quot;)</span>
 withId(&quot;DiscoverWebXmlRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2516,18 +2517,18 @@ withId(&quot;DiscoverWebXmlRuleProvider_1&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(JavaClass.references(javax.ejb.{annotationType}).at([ANNOTATION]).as(default)
 )
-	.perform(Iteration.over(?).perform( with var &#39;null&#39;)
+	.perform(Iteration.over(?).perform( with var &#39;default_instance&#39;)
 )
 withId(&quot;DiscoverEjbAnnotationsRuleProvider_StatelessAndStatefulRule&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 75</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -2684,18 +2685,19 @@ withId(&quot;DiscoverDataSourceDsXmlRuleProvider_1&quot;)</span>
 		.references(javax.persistence.DiscriminatorValue).at([ANNOTATION])
 		.as(discriminatorValueList))
 )
-	.perform(Iteration.over(?).as(entityAnnotations_instance).perform( with var &#39;null&#39;)
+	.perform(Iteration.over(?).as(entityAnnotations_instance)
+			.perform( with var &#39;entityAnnotations_instance&#39;)
 )
 withId(&quot;DiscoverJPAAnnotationsRuleProvider_JPAEntityBeanRule&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1,334</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -7208,13 +7210,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 3</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -7475,13 +7477,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 3</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -7574,13 +7576,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -9720,13 +9722,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 10</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -9753,13 +9755,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -10264,7 +10266,7 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 4</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -10297,13 +10299,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -10330,13 +10332,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -10429,13 +10431,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -11443,13 +11445,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -12032,13 +12034,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 9</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -12446,13 +12448,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -13538,13 +13540,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -13581,13 +13583,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 14</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -16510,7 +16512,7 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 1</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -17659,13 +17661,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 9</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -17715,13 +17717,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -17762,13 +17764,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -27631,13 +27633,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 9</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -28349,13 +28351,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 5</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -28776,13 +28778,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 51</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -28993,13 +28995,13 @@ withId(&quot;hsearch-groovy-01000&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -34990,13 +34992,13 @@ fulltextQuery.setSort(new Sort(new SortField(&quot;title&quot;, SortField.Type.S
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 5</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -37947,18 +37949,18 @@ fulltextQuery.setSort(new Sort(new SortField(&quot;title&quot;, SortField.Type.S
                                         <span style="white-space: pre-wrap">addRule()
 	.when(FileContent.from(null).matches({ip}).inFilesNamed({*}{type}).as(default)
 )
-	.perform(Iteration.over(?).perform( with var &#39;null&#39;)
+	.perform(Iteration.over(?).perform( with var &#39;default_instance&#39;)
 )
 withId(&quot;DiscoverHardcodedIPAddressRuleProvider&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 13</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -37989,7 +37991,7 @@ withId(&quot;DiscoverHardcodedIPAddressRuleProvider&quot;)</span>
                                     <td>
                                         <a name="ValidateXmlFilesRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.when(org.jboss.windup.rules.files.condition.ProcessingIsOnlineGraphCondition@5a2a249b
+	.when(org.jboss.windup.rules.files.condition.ProcessingIsOnlineGraphCondition@431e0888
 		.and(Query.fromType(org.jboss.windup.rules.apps.xml.model.XmlFileModel)
 		.as(default))
 )
@@ -38036,7 +38038,7 @@ withId(&quot;ValidateXmlFilesRuleProvider_1&quot;)</span>
                                         <a name="TattletaleRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.tattletale
-			.TattletaleRuleProvider$TattletaleOperation@7f747bb9
+			.TattletaleRuleProvider$TattletaleOperation@3bf54b9f
 )
 withId(&quot;TattletaleRuleProvider_1&quot;)</span>
                                     </td>
@@ -38085,13 +38087,13 @@ withId(&quot;TattletaleRuleProvider_1&quot;)</span>
 withId(&quot;Generate jboss-web.xml_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -38609,13 +38611,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 5</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -38645,13 +38647,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -39417,13 +39419,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 9</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -39561,13 +39563,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 12</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -40425,13 +40427,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -41613,13 +41615,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -41933,13 +41935,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 3</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -41969,13 +41971,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -42077,7 +42079,7 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 3</div>
+                                        <div>Vertices Created: 27</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -42511,13 +42513,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 3</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -43848,13 +43850,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -43916,13 +43918,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -44397,13 +44399,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -45580,13 +45582,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -45618,13 +45620,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -45723,13 +45725,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -45866,7 +45868,7 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 2</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -45938,13 +45940,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -45974,13 +45976,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -46118,13 +46120,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -47518,13 +47520,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -48228,13 +48230,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -48262,13 +48264,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -48296,13 +48298,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -48686,13 +48688,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -48974,13 +48976,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -49082,13 +49084,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -50406,7 +50408,7 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 2</div>
+                                        <div>Vertices Created: 5</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -50442,13 +50444,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -50478,13 +50480,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -50658,13 +50660,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -51502,13 +51504,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -51536,13 +51538,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -51570,13 +51572,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -51604,13 +51606,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -51892,13 +51894,13 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
         &lt;/rule&gt;</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 3</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -53354,7 +53356,7 @@ withId(&quot;Generate jboss-ejb3.xml_1&quot;)</span>
 		.has(classNotFoundAnalysisEnabled,EQUALS,true).as(default)
 )
 	.perform(org.jboss.windup.rules.apps.java.scan.provider
-			.FindUnboundJavaReferencesRuleProvider$AttachHintOperation@1e278b9a
+			.FindUnboundJavaReferencesRuleProvider$AttachHintOperation@3cb9855a
 )
 withId(&quot;FindUnboundJavaReferencesRuleProvider&quot;)</span>
                                     </td>
@@ -53410,7 +53412,7 @@ withId(&quot;DiscoverRemoteEjbRuleProvider_1&quot;)</span>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -53452,7 +53454,7 @@ withId(&quot;DiscoverRemoteEjbRuleProvider_1&quot;)</span>
 withId(&quot;javaee-technology-tag-000100&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 7</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -53490,7 +53492,7 @@ withId(&quot;javaee-technology-tag-000100&quot;)</span>
                                         <a name="RenderTagsJavaScriptRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules.rendering
-			.RenderTagsJavaScriptRuleProvider$1@42d28254
+			.RenderTagsJavaScriptRuleProvider$1@2d0188e1
 )
 withId(&quot;RenderTagsJavaScriptRuleProvider_1&quot;)</span>
                                     </td>
@@ -53586,13 +53588,13 @@ withId(&quot;CreateApplicationReportIndexRuleProvider_1&quot;)</span>
 withId(&quot;Resolve Links to Server Documentation_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -53631,7 +53633,7 @@ withId(&quot;Resolve Links to Server Documentation_1&quot;)</span>
 withId(&quot;CreateUnparsableFilesReportRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 1</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -53713,12 +53715,12 @@ withId(&quot;CreateAboutWindupReportRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="CreateDependencyGraphReportRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@2e926512
+	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@43815412
 )
 	.perform(org.jboss.windup.rules.apps.java.reporting.rules
 			
-		.CreateDependencyGraphReportRuleProvider$CreateDependencyGraphReportOperation@28e
-			c2bba
+		.CreateDependencyGraphReportRuleProvider$CreateDependencyGraphReportOperation@48e
+			9a904
 )
 withId(&quot;CreateDependencyGraphReportRuleProvider_1&quot;)</span>
                                     </td>
@@ -53765,7 +53767,7 @@ withId(&quot;CreateDependencyGraphReportRuleProvider_1&quot;)</span>
 withId(&quot;Create Java Dependency Report_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 3</div>
+                                        <div>Vertices Created: 51</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -53848,7 +53850,7 @@ withId(&quot;CreateJavaApplicationOverviewReportRuleProvider_1&quot;)</span>
                                         <a name="CreateCompatibleFileReportRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.when(org.jboss.windup.rules.apps.java.reporting.rules
-		.CreateCompatibleFileReportRuleProvider$1@a350e66
+		.CreateCompatibleFileReportRuleProvider$1@380a7616
 )
 	.perform(Iteration.over(?).perform(CreateCompatibleFilesApplicationReport)
 )
@@ -53896,18 +53898,18 @@ withId(&quot;CreateCompatibleFileReportRuleProvider_1&quot;)</span>
 		.as(default)
 )
 	.perform(org.jboss.windup.rules.apps.java.ip
-			.CreateHardcodedIPAddressReportRuleProvider$1@5ca3fd56
+			.CreateHardcodedIPAddressReportRuleProvider$1@19eda776
 )
 withId(&quot;CreateHardcodedIPAddressReportRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 2</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
                                     </td>
                                     <td>
-                                        Condition not met.
+                                        Condition met.
                                     </td>
                                     <td>
                                         success
@@ -53984,7 +53986,7 @@ withId(&quot;CreateJavaIgnoredFilesReportRuleProvider_1&quot;)</span>
                                         <a name="CreateReportIndexRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.reporting.rules
-			.CreateReportIndexRuleProvider$1@61a4a925
+			.CreateReportIndexRuleProvider$1@5085419d
 )
 withId(&quot;CreateReportIndexRuleProvider_1&quot;)</span>
                                     </td>
@@ -54027,7 +54029,7 @@ withId(&quot;CreateReportIndexRuleProvider_1&quot;)</span>
                                         <a name="CreateWindupFreeMarkerFunctionReport" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules.generation
-			.CreateFreeMarkerMethodReportRuleProvider$CreateMethodReport@285cef50
+			.CreateFreeMarkerMethodReportRuleProvider$CreateMethodReport@55a16300
 )
 withId(&quot;CreateWindupFreeMarkerFunctionReport&quot;)</span>
                                     </td>
@@ -54071,8 +54073,8 @@ withId(&quot;CreateWindupFreeMarkerFunctionReport&quot;)</span>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules.generation
 			
-		.CreateMigrationIssuesReportRuleProvider$CreateMigrationIssueReportOperation@a389
-			203
+		.CreateMigrationIssuesReportRuleProvider$CreateMigrationIssueReportOperation@3ef0
+			0564
 )
 withId(&quot;CreateMigrationIssuesReportRuleProvider_1&quot;)</span>
                                     </td>
@@ -54115,7 +54117,7 @@ withId(&quot;CreateMigrationIssuesReportRuleProvider_1&quot;)</span>
                                         <a name="feedTagsToGraph" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules.generation.techreport
-			.CreateTechReportRuleProvider$1@49b2975f
+			.CreateTechReportRuleProvider$1@4a52c3db
 )
 withId(&quot;feedTagsToGraph&quot;)</span>
                                     </td>
@@ -54142,7 +54144,7 @@ withId(&quot;feedTagsToGraph&quot;)</span>
                                         <a name="createTechReport" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules.generation.techreport
-			.CreateTechReportRuleProvider$CreateTechReportPunchCardOperation@d1be2cd
+			.CreateTechReportRuleProvider$CreateTechReportPunchCardOperation@30a1eaa5
 )
 withId(&quot;createTechReport&quot;)</span>
                                     </td>
@@ -54234,7 +54236,7 @@ withId(&quot;Create Spring Bean Report_1&quot;)</span>
 withId(&quot;Create JPA Report_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 4</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -54366,7 +54368,7 @@ withId(&quot;Create Remote Services Report_1&quot;)</span>
 withId(&quot;Create Server Resources Report_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 0</div>
+                                        <div>Vertices Created: 6</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -54455,7 +54457,7 @@ withId(&quot;Create Hibernate Report_1&quot;)</span>
 withId(&quot;Create EJB Report_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 4</div>
+                                        <div>Vertices Created: 5</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -54496,7 +54498,7 @@ withId(&quot;Create EJB Report_1&quot;)</span>
                                         <a name="CreateApplicationListReportRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.reporting.rules
-			.CreateApplicationListReportRuleProvider$1@42f2ba51
+			.CreateApplicationListReportRuleProvider$1@6ec636d2
 )
 withId(&quot;CreateApplicationListReportRuleProvider_1&quot;)</span>
                                     </td>
@@ -54588,7 +54590,7 @@ withId(&quot;ExportCSVFileRuleProvider_1&quot;)</span>
 withId(&quot;CreateSourceReportRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 7</div>
+                                        <div>Vertices Created: 326</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
@@ -54674,7 +54676,7 @@ withId(&quot;AttachApplicationReportsToIndexRuleProvider_1&quot;)</span>
                                         <a name="CreateIssueSummaryDataRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.rules.apps.java.reporting.rules
-			.CreateIssueSummaryDataRuleProvider$1@c949086
+			.CreateIssueSummaryDataRuleProvider$1@50a3d54b
 )
 withId(&quot;CreateIssueSummaryDataRuleProvider_1&quot;)</span>
                                     </td>
@@ -54716,10 +54718,10 @@ withId(&quot;CreateIssueSummaryDataRuleProvider_1&quot;)</span>
                                     <td>
                                         <a name="CreateDependencyGraphDataRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
-	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@51c1e624
+	.when(org.jboss.windup.rules.apps.java.condition.SourceMode@c33889f
 )
 	.perform(org.jboss.windup.rules.apps.java.reporting.rules
-			.CreateDependencyGraphDataRuleProvider$1@39e7b5b
+			.CreateDependencyGraphDataRuleProvider$1@33f8af7e
 )
 withId(&quot;CreateDependencyGraphDataRuleProvider_1&quot;)</span>
                                     </td>
@@ -54807,7 +54809,7 @@ withId(&quot;CssJsResourceRenderingRuleProvider_1&quot;)</span>
 		.has(templateType,EQUALS,FREEMARKER).as(default)
 )
 	.perform(org.jboss.windup.reporting.rules.rendering
-			.RenderReportRuleProvider$FreeMarkerThreadedRenderer@5469794b
+			.RenderReportRuleProvider$FreeMarkerThreadedRenderer@6c576f75
 )
 withId(&quot;RenderReportRuleProvider_1&quot;)</span>
                                     </td>
@@ -54932,12 +54934,12 @@ withId(&quot;CacheFileModelPrettyPathRuleProvider_1&quot;)</span>
                                         <a name="PersistCommonProjectTraversalsRuleProvider_1" class="anchor"></a>
                                         <span style="white-space: pre-wrap">addRule()
 	.perform(org.jboss.windup.web.addons.websupport.rules
-			.PersistCommonProjectTraversalsRuleProvider$1@227ffa88
+			.PersistCommonProjectTraversalsRuleProvider$1@3277e594
 )
 withId(&quot;PersistCommonProjectTraversalsRuleProvider_1&quot;)</span>
                                     </td>
                                     <td>
-                                        <div>Vertices Created: 30</div>
+                                        <div>Vertices Created: 1,763</div>
                                         <div>Edges Created: 0</div>
                                         <div>Vertices Removed: 0</div>
                                         <div>Edges Removed: 0</div>
