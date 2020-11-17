@@ -36,15 +36,12 @@ public class GraphResource {
         JanusGraph graph = graphCache.getGraph(graphDir);
         GraphTraversalSource g = new GraphTraversalSource(graph);
 
-        String result = g
-                .V()
-                .hasLabel("vertex")
-                .propertyMap()
-                .toStream()
-                .map(Object::toString)
-                .collect(Collectors.joining(", "));
+        Long result = g.V()
+                .has("name", "EQUALS", "Monolog (embedded)")
+                .count()
+                .next();
 
-        return result;
+        return result.toString();
     }
 
 }
