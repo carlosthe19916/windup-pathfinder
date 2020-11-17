@@ -1,0 +1,33 @@
+MIGRATION_ISSUES_DETAILS["59bf4541-e2b0-4972-a5bf-618b995b9123"] = [
+{description: "<p>Maven Project Object Model (POM) File<\/p>", ruleID: "DiscoverMavenProjectsRuleProvider_1", issueName: "Maven POM (pom.xml)",
+problemSummaryID: "59bf4541-e2b0-4972-a5bf-618b995b9123", files: [
+{l:"<a class='' href='pom_xml.5.html?project=2117704'>META-INF/maven/AdministracionEfectivoGrupo/AdministracionEfectivo-ear/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.57.html?project=2117704'>META-INF/maven/AdministracionEfectivoGrupo/AdministracionEfectivo-jpa/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.68.html?project=2117704'>META-INF/maven/AdministracionEfectivoGrupo/AdministracionEfectivo-web/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.14.html?project=2117704'>META-INF/maven/org.quartz-scheduler/quartz/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.73.html?project=2117704'>META-INF/maven/org.codehaus.castor/castor/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.31.html?project=2117704'>META-INF/maven/org.hibernate.common/hibernate-commons-annotations/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.60.html?project=2117704'>META-INF/maven/org.quartz-scheduler/quartz-jobs/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.78.html?project=2117704'>META-INF/maven/org.jboss.logging/jboss-logging/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.86.html?project=2117704'>META-INF/maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.43.html?project=2117704'>META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.13.html?project=2117704'>META-INF/maven/commons-beanutils/commons-beanutils/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.102.html?project=2117704'>META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.79.html?project=2117704'>META-INF/maven/org.javassist/javassist/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.82.html?project=2117704'>META-INF/maven/org.primefaces/primefaces/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.66.html?project=2117704'>META-INF/maven/org.hibernate/hibernate-validator/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.94.html?project=2117704'>META-INF/maven/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.38.html?project=2117704'>META-INF/maven/org.slf4j/slf4j-log4j12/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.34.html?project=2117704'>META-INF/maven/org.slf4j/slf4j-api/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.105.html?project=2117704'>META-INF/maven/AdministracionEfectivoGrupo/AdministracionEfectivo-ejb/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.56.html?project=2117704'>META-INF/maven/javax.validation/validation-api/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.26.html?project=2117704'>META-INF/maven/AdministracionEfectivoGrupo/AdministracionEfectivo-seguridad/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.50.html?project=2117704'>META-INF/maven/commons-logging/commons-logging/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.39.html?project=2117704'>META-INF/maven/commons-digester/commons-digester/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.98.html?project=2117704'>META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.21.html?project=2117704'>META-INF/maven/org.jasypt/jasypt/pom.xml<\/a>", oc:"1"},
+{l:"<a class='' href='pom_xml.18.html?project=2117704'>META-INF/maven/net.sf.jasperreports/jasperreports/pom.xml<\/a>", oc:"1"},
+], resourceLinks: [
+]},
+];
+onProblemSummaryLoaded("59bf4541-e2b0-4972-a5bf-618b995b9123");
