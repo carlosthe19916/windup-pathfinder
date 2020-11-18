@@ -11,7 +11,6 @@ import org.janusgraph.diskstorage.berkeleyje.BerkeleyJEStoreManager;
 import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -41,7 +40,7 @@ public class GraphCache {
             conf.setProperty("storage.berkeleydb.isolation-level", BerkeleyJEStoreManager.IsolationLevel.READ_UNCOMMITTED);
 
             conf.setProperty("storage.buffer-size", "4096");
-            conf.setProperty("storage.transactions", false);
+            conf.setProperty("storage.transactions", true);
             conf.setProperty("ids.block-size", 25000);
 
             conf.setProperty("cache.db-cache", true);
