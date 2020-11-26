@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  linux-jvm-tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Maven
+        run: mvn verify
+      - name: Prepare failure archive (if maven failed)
+        if: failure()
+        shell: bash
+        run: find . -name '*-reports' -type d | tar -czvf test-reports.tgz -T -
+      - name: Upload failure archive (if maven failed)
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: test-reports
+          path: 'test-reports.tgz'
+
+  container-images:
+    name: Container Images
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Build with Maven
+        run: mvn package -DskipTests -Dquarkus.package.type=fast-jar
+      - name: Push to GitHub Packages
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          registry: docker.pkg.github.com
+          name: carlosthe19916/windup-pathfinder/windup-pathfinder
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          dockerfile: src/main/docker/Dockerfile.fast-jar
+          snapshot: false
+          tags: "master"
+      - name: Push to Docker Hub
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: carlosthe19916/windup-pathfinder
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          dockerfile: src/main/docker/Dockerfile.fast-jar
+          snapshot: false
+          tags: "master"
+      - name: Push to Quay.io
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          registry: quay.io
+          name: carlosthe19916/windup-pathfinder
+          username: ${{ secrets.QUAYIO_USERNAME }}
+          password: ${{ secrets.QUAYIO_PASSWORD }}
+          dockerfile: src/main/docker/Dockerfile.fast-jar
+          snapshot: false
+          tags: "master"

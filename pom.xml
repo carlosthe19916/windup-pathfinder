@@ -26,6 +26,10 @@
         <!--plugings-->
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
+
+        <gremlin-driver.version>3.4.8</gremlin-driver.version>
+        <janusgraph.version>0.5.2</janusgraph.version>
+        <ferma.version>3.3.2</ferma.version>
     </properties>
 
     <dependencyManagement>
@@ -44,22 +48,29 @@
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>
             <artifactId>gremlin-driver</artifactId>
-            <version>3.4.8</version>
+            <version>${gremlin-driver.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.janusgraph</groupId>
             <artifactId>janusgraph-core</artifactId>
-            <version>0.5.2</version>
+            <version>${janusgraph.version}</version>
         </dependency>
         <dependency>
             <groupId>org.janusgraph</groupId>
             <artifactId>janusgraph-berkeleyje</artifactId>
-            <version>0.5.2</version>
+            <version>${janusgraph.version}</version>
         </dependency>
         <dependency>
             <groupId>org.janusgraph</groupId>
             <artifactId>janusgraph-lucene</artifactId>
-            <version>0.5.2</version>
+            <version>${janusgraph.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.syncleus.ferma</groupId>
+            <artifactId>ferma</artifactId>
+            <version>${ferma.version}</version>
         </dependency>
 
         <!-- Quarkus-->
