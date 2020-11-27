@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<jboss-deployment-structure>
+  <deployment>
+     <dependencies>
+        <module name="asm.asm"/>
+        <module name="com.sun.xml.bind"/>
+        <module name="javax.activation.api"/>
+        <module name="javax.mail.api"/>
+        <module name="javax.rmi.api"/>
+        <module name="javax.servlet.jstl.api"/>
+        <module name="javax.xml.bind.api"/>
+        <module name="javax.xml.soap.api"/>
+        <module name="javax.xml.ws.api"/>
+        <module name="org.apache.commons.collections"/>
+        <module name="org.apache.commons.pool"/>
+        <module name="org.apache.velocity"/>
+        <module name="org.apache.xalan"/>
+        <module name="org.jacorb"/>
+        <module name="org.jaxen"/>
+        <module name="org.jboss.jandex"/>
+        <module name="org.jboss.logmanager"/>
+        <module name="org.jboss.osgi.framework"/>
+        <module name="org.joda.time"/>
+        <module name="org.junit"/>
+        <module name="org.osgi.core"/>
+        <module name="system"/>
+     </dependencies>
+  </deployment>
+</jboss-deployment-structure>

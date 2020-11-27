@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @ApplicationScoped
-@Path("/applications")
+@Path("/execution/{executionId}/applications")
 @Produces("application/json")
 @Consumes("application/json")
 public class ApplicationResource {
@@ -25,7 +25,7 @@ public class ApplicationResource {
     ExecutionService executionService;
 
     @GET
-    @Path("/{executionId}")
+    @Path("/")
     public List<ApplicationRepresentation> getApplications(
             @PathParam("executionId") String executionId
     ) {

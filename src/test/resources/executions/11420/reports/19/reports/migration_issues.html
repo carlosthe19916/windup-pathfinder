@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            All Issues
+        </title>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="resources/css/windup.css" rel="stylesheet" media="screen">
+        <link href="resources/css/windup.java.css" rel="stylesheet" media="screen">
+        <link href="resources/css/jquery-ui.min.css" rel="stylesheet" media="screen">
+        <link href="resources/img/mta-icon.png" rel="shortcut icon" type="image/x-icon"/>
+        <style>
+            .table-bordered { border: 1px solid #222222;  border-collapse: collapse;}
+
+            .table-bordered>tfoot>tr>th,
+            .table-bordered>tfoot>tr>td .table-bordered>tbody>tr>th,
+            .table-bordered>thead>tr>th,
+            .table-bordered>thead>tr>td,
+            .table-bordered>tbody>tr>td {
+              border: 1px inset #dddddd
+            }
+
+            .fileSummary {
+                background-color: #f5f5f5;
+            }
+            /* Only horizontal lines. */
+            .migration-issues-table.table-bordered > thead > tr > th,
+            .migration-issues-table.table-bordered > tbody > tr > td {
+                border-left-style: none;
+                border-right-style: none;
+            }
+
+            /* Light yellow bg for the issue info box. */
+            .hint-detail-panel > .panel-heading {
+                border-color: #c2c2c2;
+                background-color: #fbf4b1;
+            }
+
+            .hint-detail-panel {
+                border-color: #c2c2c2;
+                background-color: #fffcdc;
+            }
+            /* Reduce the padding, default is too big. */
+            .hint-detail-panel > .panel-body { padding-bottom: 0; }
+
+            /* Colors of various effort levels. */
+            /* Commented out for now (jsight - 2016/02/15)
+            tr.problemSummary.effortINFO td.level { color: #1B540E; }
+            tr.problemSummary.effortTRIVIAL td.level { color: #50A40E; }
+            tr.problemSummary.effortCOMPLEX td.level { color: #0065AC; }
+            tr.problemSummary.effortREDESIGN td.level { color: #C67D00; }
+            tr.problemSummary.effortARCHITECTURAL td.level { color: #C42F0E; }
+            tr.problemSummary.effortUNKNOWN td.level { color: #C42F0E; }
+            */
+        </style>
+    </head>
+    <body role="document" class="migration-issues">
+        <!-- Navbar -->
+        <div id="main-navbar" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+              <strong class="wu-navbar-header">Migration Toolkit for Applications</strong><img align="right" class="wu-navbar-header" src="resources/img/Logo-RedHat-A-Reverse-RGB.png" />
+            </span>            </div>
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="active">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      All Issues
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_punch.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report_global.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_global.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_global.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.jboss.org/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+                </div><!-- /.nav-collapse -->
+        </div>
+        <!-- / Navbar -->
+
+        <div class="container-fluid" role="main">
+            <div class="row">
+                <div class="page-header page-header-no-border">
+                    <h1>
+                        <div class="main">All Issues
+                        <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="This report provides a concise summary of all issues sorted by category."></i>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container-fluid theme-showcase" role="main">
+                    <!-- HEAD -->
+                        <table class="table table-bordered table-condensed tablesorter migration-issues-table">
+                            <thead>
+                                <tr class="tablesorter-ignoreRow" style="background: #337ab7;color: #FFFFFF; font-size: 14pt;">
+                                    <td style="border: 0px; padding: 10px 15px"><b>Migration Mandatory</b></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                </tr>
+                                <tr style="background: rgb(212, 230, 233);">
+                                    <th class="sortable">Issue by Category</th>
+                                    <th class="sortable-right text-right">Incidents Found</th>
+                                    <th class="sortable-right text-right">Story Points per Incident</th>
+                                    <th>Level of Effort</th>
+                                    <th class="sortable-right text-right">Total Story Points</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="tablesorter-ignoreRow" style="background: rgb(212, 230, 233);">
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">8</td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">16</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Call of JNDI lookup
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="3626a053-adb7-44ff-b733-3196413382c3">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                WebSphere JSP engine configuration (ibm-web-ext)
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="262b756f-1829-4405-8d49-65478906046f">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                JSF FaceletContext.FACELET_CONTEXT_KEY changed value
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="adfe2341-abeb-444b-b97c-80cd9ad96f2c">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Proprietary InitialContext initialization
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="1203ac42-4b55-496a-960b-e6cbbfc4f9a7">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortCOMPLEX">
+        <td>
+            <a href="#" class="toggle">
+                Hibernate embedded library
+            </a>
+        </td>
+        <td class="text-right">4</td>
+        <td class="text-right">3</td>
+        <td class="level">Complex change with documented solution</td>
+        <td class="text-right">12</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="7aa6c296-e653-44b1-9b91-3327b6f63ad8">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered table-condensed tablesorter migration-issues-table">
+                            <thead>
+                                <tr class="tablesorter-ignoreRow" style="background: #337ab7;color: #FFFFFF; font-size: 14pt;">
+                                    <td style="border: 0px; padding: 10px 15px"><b>Migration Optional</b></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                </tr>
+                                <tr style="background: rgb(212, 230, 233);">
+                                    <th class="sortable">Issue by Category</th>
+                                    <th class="sortable-right text-right">Incidents Found</th>
+                                    <th class="sortable-right text-right">Story Points per Incident</th>
+                                    <th>Level of Effort</th>
+                                    <th class="sortable-right text-right">Total Story Points</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="tablesorter-ignoreRow" style="background: rgb(212, 230, 233);">
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">29</td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">25</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Hibernate 5.1  - @Embeddable changes interpretation
+            </a>
+        </td>
+        <td class="text-right">25</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">25</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="5ccb9805-6739-45f1-824e-54d705031c8e">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Dynamic class instantiation
+            </a>
+        </td>
+        <td class="text-right">2</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="58fa0939-4eb7-4339-8ab6-70398eb518db">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - JDBC
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="d21f0dcc-a2a0-4b44-a7fc-00398b5219ac">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Unparsable XML File
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="3392bb03-fb6f-4301-8b2d-502780404255">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered table-condensed tablesorter migration-issues-table">
+                            <thead>
+                                <tr class="tablesorter-ignoreRow" style="background: #337ab7;color: #FFFFFF; font-size: 14pt;">
+                                    <td style="border: 0px; padding: 10px 15px"><b>Migration Potential</b></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                </tr>
+                                <tr style="background: rgb(212, 230, 233);">
+                                    <th class="sortable">Issue by Category</th>
+                                    <th class="sortable-right text-right">Incidents Found</th>
+                                    <th class="sortable-right text-right">Story Points per Incident</th>
+                                    <th>Level of Effort</th>
+                                    <th class="sortable-right text-right">Total Story Points</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="tablesorter-ignoreRow" style="background: rgb(212, 230, 233);">
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">4</td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">2</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Move to Jakarta EE Maven Artifacts - javax.validation:validation-api
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="e4329cd0-7e76-48a1-a1e5-5302484f627c">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Hibernate 5.3 - default_schema or default_catalog must be defined or set jdbc_metadata_extraction_strategy
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">1</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="e94c83cc-0d24-4a80-9e4e-31b5cd9e8f66">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Test-002 Remote Exception
+            </a>
+        </td>
+        <td class="text-right">2</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="7809a03c-bba7-4822-b211-e5a5ae9270ab">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered table-condensed tablesorter migration-issues-table">
+                            <thead>
+                                <tr class="tablesorter-ignoreRow" style="background: #337ab7;color: #FFFFFF; font-size: 14pt;">
+                                    <td style="border: 0px; padding: 10px 15px"><b>Cloud Mandatory</b></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                </tr>
+                                <tr style="background: rgb(212, 230, 233);">
+                                    <th class="sortable">Issue by Category</th>
+                                    <th class="sortable-right text-right">Incidents Found</th>
+                                    <th class="sortable-right text-right">Story Points per Incident</th>
+                                    <th>Level of Effort</th>
+                                    <th class="sortable-right text-right">Total Story Points</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="tablesorter-ignoreRow" style="background: rgb(212, 230, 233);">
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">13</td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">13</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+    <tr class="problemSummary effortTRIVIAL">
+        <td>
+            <a href="#" class="toggle">
+                Hard-coded IP address
+            </a>
+        </td>
+        <td class="text-right">13</td>
+        <td class="text-right">1</td>
+        <td class="level">Trivial change or 1-1 library swap</td>
+        <td class="text-right">13</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="8c9b7e4b-7278-4f5e-bfe3-85e9052197e3">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered table-condensed tablesorter migration-issues-table">
+                            <thead>
+                                <tr class="tablesorter-ignoreRow" style="background: #337ab7;color: #FFFFFF; font-size: 14pt;">
+                                    <td style="border: 0px; padding: 10px 15px"><b>Information</b></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                </tr>
+                                <tr style="background: rgb(212, 230, 233);">
+                                    <th class="sortable">Issue by Category</th>
+                                    <th class="sortable-right text-right">Incidents Found</th>
+                                    <th class="sortable-right text-right">Story Points per Incident</th>
+                                    <th>Level of Effort</th>
+                                    <th class="sortable-right text-right">Total Story Points</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr class="tablesorter-ignoreRow" style="background: rgb(212, 230, 233);">
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">99</td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px"></td>
+                                    <td style="border: 0px" class="text-right">0</td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - Jasypt
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="007a4d5d-97de-419b-bad1-1d6963b66ef6">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded framework - Hibernate
+            </a>
+        </td>
+        <td class="text-right">4</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="665d9c40-b8d9-4f3d-ada7-fc1fc9eb2d70">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - JFreeChart
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="195c2893-40f9-4c9d-9771-035eeee8b7be">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - SLF4J
+            </a>
+        </td>
+        <td class="text-right">2</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="20ab1854-d63b-4acd-b6a1-0dc195870197">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded Oracle DB Driver
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="abf37f62-6920-441c-bdd7-7a721f055098">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded framework - AOP Alliance
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="5ee08b3f-c1aa-470d-87f9-514ea92e3679">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - JBoss logging
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="252a73e5-77c2-44c7-9898-014b0a87cb4c">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - Apache Log4J
+            </a>
+        </td>
+        <td class="text-right">3</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="c8d2e1f8-eeb3-49b7-ac8b-6eeeb3369f3f">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - PrimeFaces
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="dbb080ea-f238-4b1a-a03e-1580c9601161">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded framework - Spring DI
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="52235cd0-4083-41a0-8c1a-3cbdd43a12bf">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Java EE Application Deployment
+            </a>
+        </td>
+        <td class="text-right">2</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="f6a3fca1-9edc-4359-9887-b9d8de80cd81">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Java Servlet
+            </a>
+        </td>
+        <td class="text-right">8</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="bf2c910c-a3f1-43d1-92d1-ae2d35f7b56a">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Mail usage
+            </a>
+        </td>
+        <td class="text-right">2</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="2a745d7f-a091-48c9-a1a7-3eeb95504eb3">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                JAXB
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="23218fab-598c-40eb-a4f0-1f1fedd8092a">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Web XML
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="e47ddb0a-2bf1-468a-ab77-427f4b8db3ec">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - JSF
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="ca3ffc98-e6c7-48a0-8920-888f96acc31b">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - Bouncy Castle
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="578372d2-d3bd-44f4-9ec2-3a3bb669d4b1">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded library - Apache Commons Logging
+            </a>
+        </td>
+        <td class="text-right">1</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="2595addd-c4c8-4792-8731-ea2b5c5ea404">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Embedded framework - Spring
+            </a>
+        </td>
+        <td class="text-right">6</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="3bd78958-d511-43c5-b352-84b794522dbe">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Common Annotations
+            </a>
+        </td>
+        <td class="text-right">32</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="df776a3b-ffe9-469b-8de7-d6f147b14450">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr class="problemSummary effortINFO">
+        <td>
+            <a href="#" class="toggle">
+                Maven POM (pom.xml)
+            </a>
+        </td>
+        <td class="text-right">28</td>
+        <td class="text-right">0</td>
+        <td class="level">Info</td>
+        <td class="text-right">0</td>
+    </tr>
+    <tr class="tablesorter-childRow bg-info" data-summary-id="66c54052-1809-4424-9c21-22278c3b5ad9">
+        <td colspan="5" style="display: none;" class="table-inner-wrapping-td">
+            <table class="table-inner table table-bordered table-condensed migration-issues-table">
+                <thead>
+                    <!-- First rows used to calculate columns width -->
+                    <tr style="visibility: collapse;"><th></th><th></th><th></th><th></th><th></th></tr>
+                    <tr class="bg-info">
+                        <th><div class="indent"><strong>File</strong></div></th>
+                        <th class="text-right"><strong>Incidents Found</strong></th>
+                        <th colspan="3"><strong>Hint</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+                            </tbody>
+                        </table>
+                    <!-- 4c47fc7cb... Several style fixes to make the reports more consistent -->
+                </div>
+            </div>
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Nov 26, 2020 8:41:09 AM</div>        </div>
+
+        <script src="resources/js/jquery-3.3.1.min.js"></script>
+        <script src="resources/js/jquery-ui.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/jquery.tablesorter.min.js"></script>
+        <script src="resources/js/jquery.tablesorter.widgets.min.js"></script>
+        <script src="resources/libraries/handlebars/handlebars.4.0.5.min.js"></script>
+
+        <!#-- We are using short variable names because they repeat a lot in the generated HTML
+              and using short reduces the file sizes significantly.
+
+              {l} - label
+              {oc} - occurences
+              {h} - href
+              {t} - link title
+
+              The actual data are generated lower into MIGRATION_ISSUES_DETAILS[] .
+        -->
+        <script id="detail-row-template" type="text/x-handlebars-template">
+            {{#each problemSummaries}}
+                {{#each files}}
+                    <tr class="fileSummary tablesorter-childRow fileSummary_id_{{../problemSummaryID}}">
+                        <td>
+                            <div class="indent">
+                                {{{l}}}
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            {{oc}}
+                        </td>
+
+                        {{#if @first}}
+                            <td colspan="3" rowspan="{{../files.length}}">
+                                <div class="panel panel-default hint-detail-panel">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title pull-left">Issue Detail: {{../issueName}}</h4>
+                                        {{#if ../ruleID}}
+                                            <div class="pull-right">
+                                                <a class="sh_url" title="{{../ruleID}}" href="windup_ruleproviders.html#{{../ruleID}}">Show Rule</a>
+                                            </div>
+                                        {{/if}}
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="panel-body">
+                                        {{{../description}}}
+                                    </div>
+
+                                    {{#if ../resourceLinks}}
+                                        <div class="panel-body">
+                                            <ul>
+                                                {{#each ../resourceLinks}}
+                                                    <li><a href="{{h}}" target="_blank">{{t}}</a></li>
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    {{/if}}
+                                </div>
+                            </td>
+                        {{/if}}
+                    </tr>
+                {{/each}}
+            {{/each}}
+        </script>
+
+        <script src="resources/js/windup-migration-issues.js"></script>
+        <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+
+    </body>
+</html>

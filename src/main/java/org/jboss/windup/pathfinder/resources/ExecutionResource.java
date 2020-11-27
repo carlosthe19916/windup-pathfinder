@@ -4,10 +4,8 @@ import org.jboss.windup.pathfinder.idm.ExecutionRepresentation;
 import org.jboss.windup.pathfinder.services.ExecutionService;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
+import java.io.File;
 import java.nio.file.Paths;
 
 @Path("/executions")
@@ -20,14 +18,22 @@ public class ExecutionResource {
 
     @POST
     @Path("/")
-    public ExecutionRepresentation registerExecution(String folderPath) {
-        java.nio.file.Path path = Paths.get(folderPath);
-        String executionId = executionService.create(path);
+    public String registerExecution(ExecutionRepresentation rep) {
+        java.nio.file.Path path = Paths.get(rep.getFolderPath());
+        File file = path.toFile();
 
-        return ExecutionRepresentation.Builder.anExecutionRepresentation()
-                .withId(executionId)
-                .withFolderPath(folderPath)
-                .build();
+        if (!file.exists()) {
+            throw new BadRequestException("Folder does not exists");
+        }
+
+        File[] configFile = file.listFiles((dir, name) -> name.equals("TitanConfiguration.properties") ||
+                name.equals("graphsearch") ||
+                name.equals("titangraph"));
+        if (configFile != null && configFile.length != 3) {
+            throw new BadRequestException("Invalid folder");
+        }
+
+        return executionService.create(path);
     }
 
 }
