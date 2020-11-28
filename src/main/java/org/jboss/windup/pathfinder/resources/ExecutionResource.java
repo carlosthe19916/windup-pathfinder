@@ -18,7 +18,7 @@ public class ExecutionResource {
 
     @POST
     @Path("/")
-    public String registerExecution(ExecutionRepresentation rep) {
+    public ExecutionRepresentation registerExecution(ExecutionRepresentation rep) {
         java.nio.file.Path path = Paths.get(rep.getFolderPath());
         File file = path.toFile();
 
@@ -33,7 +33,9 @@ public class ExecutionResource {
             throw new BadRequestException("Invalid folder");
         }
 
-        return executionService.create(path);
+        return ExecutionRepresentation.Builder.anExecutionRepresentation()
+                .withId(executionService.create(path))
+                .build();
     }
 
 }

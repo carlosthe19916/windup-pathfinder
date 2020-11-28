@@ -15,7 +15,7 @@ public class EphemeralExecutionService implements ExecutionService {
     @Inject
     GraphCache graphCache;
 
-    private Map<String, JanusGraph> executionMap = new ConcurrentHashMap<>();
+    private final Map<String, JanusGraph> executionMap = new ConcurrentHashMap<>();
 
     @Override
     public String create(Path executionPath) {
